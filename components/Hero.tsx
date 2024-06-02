@@ -43,7 +43,7 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-left text-blue-100 max-w-80">
-            Dynamic Web Magic with Next.js
+            Passionate Software Developer
           </p>
 
           {/**
@@ -53,18 +53,20 @@ const Hero = () => {
            */}
           <TextGenerateEffect
             // words="Transforming Concepts into Seamless User Experiences"
-            words="Evolving Blueprints into Intuitive User Experiences"
+            // words="Evolving Blueprints into Intuitive User Experiences"
+            words="Hi! I'm Sadeesha Perera"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Sadeesha Perera, a Passionate Software Developer in Sri
-            Lanka
+            {/* Hi! I&apos;m Sadeesha Perera, a Passionate Software Developer in Sri
+            Lanka */}
+            Evolving Blueprints into Intuitive User Experiences
           </p>
 
           <a href="#about">
             <MagicButton
-              title="Show my work"
+              title="Show my skills"
               icon={<FaLocationArrow />}
               position="right"
             />
