@@ -11,8 +11,9 @@ const projectsData = [
     description: "Wedding Management System",
     image: "/images/projects/blissify.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl:
+      "https://github.com/SadeeshaPerera/Blissify--Wedding-Management-System",
+    previewUrl: "https://youtu.be/ZZwhkC4C63M",
   },
   {
     id: 2,
@@ -20,8 +21,9 @@ const projectsData = [
     description: "Health Insurance Management System",
     image: "/images/projects/lifecare.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl:
+      "https://github.com/SadeeshaPerera/LifeCare--Health-Insurance-Management-System",
+    previewUrl: "https://youtu.be/icUjZI3ujTc",
   },
   {
     id: 3,
@@ -29,7 +31,7 @@ const projectsData = [
     description: "Cloud Computing Projects",
     image: "/images/projects/aws-projects.jpg",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/SadeeshaPerera/aws-projects",
     previewUrl: "/",
   },
   {
@@ -38,8 +40,8 @@ const projectsData = [
     description: "Task Management Android App",
     image: "/images/projects/tasky.png",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/SadeeshaPerera/android-task-app",
+    previewUrl: "https://youtu.be/wW00BAkv7PM",
   },
   {
     id: 5,
@@ -47,8 +49,9 @@ const projectsData = [
     description: "Online Food Ordering System",
     image: "/images/projects/yumride.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl:
+      "https://github.com/SadeeshaPerera/YumRide--Online-Food-Ordering-System",
+    previewUrl: "https://youtu.be/t8QaBHU6ihk",
   },
   {
     id: 6,
@@ -56,7 +59,7 @@ const projectsData = [
     description: "Smart Healthcare System",
     image: "/images/projects/edoc.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/SadeeshaPerera/smart_healthcare_system",
     previewUrl: "/",
   },
   {
@@ -65,8 +68,8 @@ const projectsData = [
     description: "Bus Booking App",
     image: "/images/projects/bglk.png",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/SadeeshaPerera/bus_booking_app",
+    previewUrl: "https://youtu.be/DwPL5LmwvXI?si=Rq38S2UF9OuObj8Q",
   },
   {
     id: 8,
@@ -74,8 +77,8 @@ const projectsData = [
     description: "Shopping Mall Management System",
     image: "/images/projects/shopping-mate.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/SadeeshaPerera/shopping_mall_application",
+    previewUrl: "https://sadeeshaperera.github.io/shopping_mall_application/",
   },
 ];
 
