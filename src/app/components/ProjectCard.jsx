@@ -5,7 +5,7 @@ import Link from "next/link";
 const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
   return (
     <div className="project-card p-4">
-      <div className="w-auto rounded-t-xl relative group overflow-hidden">
+      <div className="w-auto relative group overflow-hidden border border-gray-300">
         <img
           src={imgUrl}
           alt={title}
