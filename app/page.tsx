@@ -21,7 +21,7 @@ export default function Home() {
       </div>
 
       <About />
-      <Resume />
+      {/* <Resume /> */}
       <Projects />
       <Services />
       <Testimonials />
