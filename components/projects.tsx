@@ -90,7 +90,7 @@ export default function Projects() {
       github: "#",
       demo: "#",
       blog: "#",
-      image: "/placeholder.svg?height=200&width=400",
+      image: "./images/yumride.png?height=200&width=400",
       icon: <Code className="h-6 w-6" />,
     },
     {
@@ -112,7 +112,7 @@ export default function Projects() {
       github: "#",
       demo: "#",
       blog: null,
-      image: "/placeholder.svg?height=200&width=400",
+      image: "/images/blissify.png?height=200&width=400",
       icon: <Globe className="h-6 w-6" />,
     },
     {
@@ -134,7 +134,7 @@ export default function Projects() {
       github: "#",
       demo: "#",
       blog: "#",
-      image: "/placeholder.svg?height=200&width=400",
+      image: "images/lifecare.png?height=200&width=400",
       icon: <Database className="h-6 w-6" />,
     },
     {
@@ -156,7 +156,7 @@ export default function Projects() {
       github: "#",
       demo: "#",
       blog: null,
-      image: "/placeholder.svg?height=200&width=400",
+      image: "/images/shoppingmate.png?height=200&width=400",
       icon: <Monitor className="h-6 w-6" />,
     },
   ];
