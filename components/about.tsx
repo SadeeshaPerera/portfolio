@@ -136,7 +136,7 @@ export default function About() {
                 }}
               >
                 <img
-                  src="/images/sadeesha.png"
+                  src="/images/cartoon.png"
                   alt="Sadeesha Perera - Full-Stack DevOps Engineer"
                   className="w-full h-full object-contain p-4"
                 />
