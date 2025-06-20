@@ -20,7 +20,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0 flex items-center gap-3">
             <img
-              src="/images/kihuni.png"
+              src="/images/sadeesha.png"
               alt="Sadeesha Perera"
               className="h-10 w-10 rounded-md"
             />
@@ -35,14 +35,14 @@ export default function Footer() {
 
           <div className="flex gap-4 mb-4 md:mb-0">
             <a
-              href="https://www.linkedin.com/in/kihuni/"
+              href=""
               className="p-2 rounded-full hover:bg-jungle-800 transition-colors"
               aria-label="LinkedIn"
             >
               <Linkedin className="h-5 w-5" />
             </a>
             <a
-              href="https://github.com/kihuni"
+              href=""
               className="p-2 rounded-full hover:bg-jungle-800 transition-colors"
               aria-label="GitHub"
             >

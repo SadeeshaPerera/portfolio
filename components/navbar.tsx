@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { Button } from "@/components/ui/button"
-import ThemeToggle from "@/components/theme-toggle"
-import { Menu, X, Cloud } from "lucide-react"
-import { useMobile } from "@/hooks/use-mobile"
+import { useState, useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import ThemeToggle from "@/components/theme-toggle";
+import { Menu, X, Cloud } from "lucide-react";
+import { useMobile } from "@/hooks/use-mobile";
 
 export default function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const isMobile = useMobile()
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const isMobile = useMobile();
 
   const navItems = [
     { name: "Home", href: "#" },
@@ -19,39 +19,48 @@ export default function Navbar() {
     { name: "Services", href: "#services" },
     { name: "Blog", href: "#blog" },
     { name: "Contact", href: "#contact" },
-  ]
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10)
-    }
+      setIsScrolled(window.scrollY > 10);
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const scrollToSection = (href: string) => {
-    setIsMenuOpen(false)
+    setIsMenuOpen(false);
     if (href === "#") {
-      window.scrollTo({ top: 0, behavior: "smooth" })
+      window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
-      document.querySelector(href)?.scrollIntoView({ behavior: "smooth" })
+      document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   return (
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? "bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm shadow-sm" : "bg-transparent"
+          isScrolled
+            ? "bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm shadow-sm"
+            : "bg-transparent"
         }`}
       >
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16 md:h-20">
             <div className="flex items-center gap-2">
-              <img src="/images/kihuni.png" alt="Sadeesha Perera" className="h-10 w-10 rounded-md" />
+              <img
+                src="/images/sadeesha.png"
+                alt="Sadeesha Perera"
+                className="h-10 w-10 rounded-md"
+              />
               <div className="font-bold text-xl text-slate-800 dark:text-white flex items-center">
-                Sadeesha<span className="text-devops-500 dark:text-devops-300">Perera</span>
+                Sadeesha
+                <span className="text-devops-500 dark:text-devops-300">
+                  Perera
+                </span>
                 <Cloud className="h-4 w-4 ml-1 text-devops-500 dark:text-devops-300" />
               </div>
             </div>
@@ -74,7 +83,12 @@ export default function Navbar() {
             {/* Mobile Navigation Toggle */}
             <div className="flex items-center md:hidden gap-2">
               <ThemeToggle />
-              <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                aria-label="Toggle menu"
+              >
                 {isMenuOpen ? (
                   <X className="h-6 w-6 text-slate-800 dark:text-white" />
                 ) : (
@@ -104,5 +118,5 @@ export default function Navbar() {
         </div>
       )}
     </>
-  )
+  );
 }

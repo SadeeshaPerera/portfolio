@@ -1,34 +1,34 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { motion } from "framer-motion"
-import Link from "next/link"
-import { Leaf } from "lucide-react"
-import { useEffect, useState } from "react"
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { Leaf } from "lucide-react";
+import { useEffect, useState } from "react";
 
 export default function NotFound() {
   // Use state to store window dimensions
-  const [dimensions, setDimensions] = useState({ width: 1200, height: 800 })
-  const [isMounted, setIsMounted] = useState(false)
+  const [dimensions, setDimensions] = useState({ width: 1200, height: 800 });
+  const [isMounted, setIsMounted] = useState(false);
 
   // Only access window after component is mounted
   useEffect(() => {
     setDimensions({
       width: window.innerWidth,
       height: window.innerHeight,
-    })
-    setIsMounted(true)
+    });
+    setIsMounted(true);
 
     const handleResize = () => {
       setDimensions({
         width: window.innerWidth,
         height: window.innerHeight,
-      })
-    }
+      });
+    };
 
-    window.addEventListener("resize", handleResize)
-    return () => window.removeEventListener("resize", handleResize)
-  }, [])
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   // Don't render animations until client-side
   if (!isMounted) {
@@ -39,17 +39,23 @@ export default function NotFound() {
             <div className="text-center">
               <div className="flex justify-center mb-6">
                 <img
-                  src="/images/kihuni.png"
+                  src="/images/sadeesha.png"
                   alt="Sadeesha Perera - Lost in the Django Jungle"
                   className="w-32 h-32 object-contain"
                 />
               </div>
               <h1 className="text-6xl font-bold text-white mb-2">404</h1>
-              <h2 className="text-2xl font-semibold text-jungle-200 mb-4">Lost in the Django Jungle</h2>
+              <h2 className="text-2xl font-semibold text-jungle-200 mb-4">
+                Lost in the Django Jungle
+              </h2>
               <p className="text-slate-200 mb-8">
-                Oops! It seems you've wandered off the path. This page doesn't exist in our jungle.
+                Oops! It seems you've wandered off the path. This page doesn't
+                exist in our jungle.
               </p>
-              <Button asChild className="bg-jungle-600 hover:bg-jungle-700 text-white">
+              <Button
+                asChild
+                className="bg-jungle-600 hover:bg-jungle-700 text-white"
+              >
                 <Link href="/">
                   <Leaf className="mr-2 h-4 w-4" /> Return to Base Camp
                 </Link>
@@ -58,7 +64,7 @@ export default function NotFound() {
           </div>
         </div>
       </div>
-    )
+    );
   }
 
   return (
@@ -102,22 +108,32 @@ export default function NotFound() {
             <motion.div
               className="flex justify-center mb-6"
               animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
+              transition={{
+                duration: 2,
+                repeat: Number.POSITIVE_INFINITY,
+                ease: "easeInOut",
+              }}
             >
               <img
-                src="/images/kihuni.png"
+                src="/images/sadeesha.png"
                 alt="Sadeesha Perera - Lost in the Django Jungle"
                 className="w-32 h-32 object-contain"
               />
             </motion.div>
 
             <h1 className="text-6xl font-bold text-white mb-2">404</h1>
-            <h2 className="text-2xl font-semibold text-jungle-200 mb-4">Lost in the Django Jungle</h2>
+            <h2 className="text-2xl font-semibold text-jungle-200 mb-4">
+              Lost in the Django Jungle
+            </h2>
             <p className="text-slate-200 mb-8">
-              Oops! It seems you've wandered off the path. This page doesn't exist in our jungle.
+              Oops! It seems you've wandered off the path. This page doesn't
+              exist in our jungle.
             </p>
 
-            <Button asChild className="bg-jungle-600 hover:bg-jungle-700 text-white">
+            <Button
+              asChild
+              className="bg-jungle-600 hover:bg-jungle-700 text-white"
+            >
               <Link href="/">
                 <Leaf className="mr-2 h-4 w-4" /> Return to Base Camp
               </Link>
@@ -126,5 +142,5 @@ export default function NotFound() {
         </div>
       </div>
     </div>
-  )
+  );
 }

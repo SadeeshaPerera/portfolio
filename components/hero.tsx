@@ -87,9 +87,9 @@ export default function Hero() {
             >
               <div className="w-full h-full bg-gradient-to-br from-devops-400 via-emerald-500 to-devops-600 rounded-full flex items-center justify-center shadow-2xl">
                 <img
-                  src="/images/kihuni.png"
+                  src="/images/sadeesha.png"
                   alt="Sadeesha Perera - Full-Stack DevOps Engineer"
-                  className="w-32 h-32 md:w-40 md:h-40 lg:w-44 lg:h-44 object-contain drop-shadow-xl"
+                  className="w-full h-full rounded-full object-cover drop-shadow-xl"
                 />
               </div>
             </motion.div>
