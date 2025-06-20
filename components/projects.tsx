@@ -161,6 +161,50 @@ export default function Projects() {
     },
   ];
 
+  const mobileProjects = [
+    {
+      title: "Bus Booking App",
+      description:
+        "Developed a secure mobile banking application with real-time transaction monitoring, account management, and fund transfer features.",
+      role: "Mobile Developer",
+      outcome:
+        "Enabled 100K+ users to manage their finances on-the-go, reduced transaction times by 70%",
+      techStack: [
+        "React Native",
+        "Node.js",
+        "MongoDB",
+        "AWS Amplify",
+        "Jest",
+        "Docker",
+      ],
+      github: "#",
+      demo: "#",
+      blog: null,
+      image: "/images/bglk.png?height=200&width=400",
+      icon: <Code className="h-6 w-6" />,
+    },
+    {
+      title: "Task Management App",
+      description:
+        "Created a cross-platform fitness tracking application with real-time GPS tracking, workout logging, and social sharing features.",
+      role: "Mobile Developer",
+      outcome:
+        "Acquired 50K+ downloads, 4.8+ average rating, featured in 'Top Fitness Apps'",
+      techStack: [
+        "Flutter",
+        "Dart",
+        "Firebase",
+        "Google Maps API",
+        "Stripe API",
+      ],
+      github: "#",
+      demo: "#",
+      blog: null,
+      image: "/images/tasky.png?height=200&width=400",
+      icon: <Monitor className="h-6 w-6" />,
+    },
+  ];
+
   const ProjectCard = ({ project, type }: { project: any; type: string }) => (
     <Card className="h-full flex flex-col overflow-hidden border-slate-200 dark:border-slate-700 hover:shadow-lg transition-all duration-300 hover:scale-105">
       <div className="aspect-video w-full overflow-hidden bg-gradient-to-br from-devops-100 to-slate-100 dark:from-devops-900/30 dark:to-slate-800 relative group">
@@ -282,7 +326,7 @@ export default function Projects() {
         </motion.div>
 
         <Tabs defaultValue="devops" className="w-full">
-          <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-8">
+          <TabsList className="grid w-full max-w-md mx-auto grid-cols-3 mb-8">
             <TabsTrigger value="devops" className="flex items-center gap-2">
               <Cloud className="h-4 w-4" />
               DevOps Projects
@@ -290,6 +334,10 @@ export default function Projects() {
             <TabsTrigger value="fullstack" className="flex items-center gap-2">
               <Code className="h-4 w-4" />
               Full-Stack Projects
+            </TabsTrigger>
+            <TabsTrigger value="mobile" className="flex items-center gap-2">
+              <Monitor className="h-4 w-4" />
+              Mobile Projects
             </TabsTrigger>
           </TabsList>
 
@@ -330,6 +378,27 @@ export default function Projects() {
                   viewport={{ once: true }}
                 >
                   <ProjectCard project={project} type="fullstack" />
+                </motion.div>
+              ))}
+            </motion.div>
+          </TabsContent>
+
+          <TabsContent value="mobile">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="grid grid-cols-1 md:grid-cols-2 gap-8"
+            >
+              {mobileProjects.map((project, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  <ProjectCard project={project} type="mobile" />
                 </motion.div>
               ))}
             </motion.div>
