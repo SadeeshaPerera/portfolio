@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Cloud } from "lucide-react";
+import { Github, Linkedin, Mail, Cloud, Instagram, Facebook } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -49,12 +49,20 @@ export default function Footer() {
               <Github className="h-5 w-5" />
             </a>
             <a
+              href=""
+              className="p-2 rounded-full hover:bg-jungle-800 transition-colors"
+              aria-label="GitHub"
+            >
+              <Instagram className="h-5 w-5" />
+            </a>
+            <a
               href="mailto:saman@gmail.com.com"
               className="p-2 rounded-full hover:bg-jungle-800 transition-colors"
               aria-label="Email"
             >
               <Mail className="h-5 w-5" />
             </a>
+            
           </div>
 
           <div className="text-sm text-jungle-400">

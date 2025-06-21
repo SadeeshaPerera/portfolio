@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
-import { Github, Linkedin, Mail, FileText } from "lucide-react";
+import { Github, Linkedin, Mail, FileText, SquarePen  } from "lucide-react";
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {
@@ -124,6 +124,13 @@ export default function Contact() {
                         aria-label="GitHub"
                       >
                         <Github className="h-5 w-5 text-slate-700 dark:text-slate-300" />
+                      </a>
+                       <a
+                        href="#"
+                        className="bg-slate-100 dark:bg-slate-800 p-3 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+                        aria-label="GitHub"
+                      >
+                        <SquarePen className="h-5 w-5 text-slate-700 dark:text-slate-300" />
                       </a>
                       <a
                         href="#"

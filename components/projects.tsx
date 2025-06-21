@@ -65,7 +65,7 @@ export default function Projects() {
       github: "#",
       demo: "#",
       blog: null,
-      image: "/images/automa?height=200&width=400",
+      image: "/images/aws_all.jpg?height=200&width=400",
       icon: <Monitor className="h-6 w-6" />,
     },
     {
