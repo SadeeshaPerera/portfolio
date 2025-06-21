@@ -35,7 +35,7 @@ export default function Resume() {
     },
     {
       title: "Software Engineering Student",
-      company: "SLIIT",
+      company: "Sri Lanka Institute of Information Technology",
       location: "Malabe, Sri Lanka",
       period: "2022 - Present",
       type: "fullstack",
@@ -52,7 +52,7 @@ export default function Resume() {
     {
       degree:
         "Bachelor degree in Information Technology specializing in Software Engineering",
-      institution: "SLIIT",
+      institution: "Sri Lanka Institute of Information Technology",
       period: "2022 - Present",
       details:
         "Focus on Software Engineering, Systems Programming, and Database Design",
@@ -201,7 +201,7 @@ export default function Resume() {
                   <span className="text-sm">sadeeshabperera@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Languages  className="h-4 w-4 text-emerald-500" />
+                  <Languages className="h-4 w-4 text-emerald-500" />
                   <span className="text-sm">English & Sinhala</span>
                 </div>
                 <div className="flex items-center gap-2">
