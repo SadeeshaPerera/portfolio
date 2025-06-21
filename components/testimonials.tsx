@@ -16,7 +16,7 @@ export default function Testimonials() {
       name: "Dhanushka Uditha",
       role: "Senior DevOps Engineer, Zincat Technology",
       content:
-        "Sadeesha has consistently demonstrated a high level of professionalism and technical expertise during his time with us. His proactive approach to automating deployments, optimizing CI/CD pipelines, and maintaining infrastructure stability has made a noticeable impact on our operations. Thanks to his contributions, we’ve experienced smoother releases, minimal downtime, and improved overall reliability in our systems all while staying within our resource budget. He’s a valuable asset to any DevOps team.",
+        "Sadeesha has consistently demonstrated a high level of professionalism and technical expertise during his time with us. His proactive approach to automating deployments, optimizing CI/CD pipelines, and maintaining infrastructure stability has made a noticeable impact on our operations. Thanks to his contributions, we’ve experienced smoother releases, minimal downtime, and improved overall reliability in our systems all while staying within our resource budget.",
       avatar: "DU",
       stars: 5,
       type: "devops",
