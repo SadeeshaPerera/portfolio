@@ -13,6 +13,7 @@ import {
   Calendar,
   Cloud,
   Code,
+  Languages,
 } from "lucide-react";
 
 export default function Resume() {
@@ -60,7 +61,7 @@ export default function Resume() {
       degree: "G.C.E Advanced Level",
       institution: "De Mazenod College",
       period: "2018 - 2021",
-      details: "Focused on Mathematics, Physics, and Information Technology",
+      details: "Focused on Mathematics, Physics, Chemistry and ICT",
     },
     {
       degree: "G.C.E Ordinary Level",
@@ -197,15 +198,15 @@ export default function Resume() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 <div className="flex items-center gap-2">
                   <Mail className="h-4 w-4 text-emerald-500" />
-                  <span className="text-sm">sample@gmail.com</span>
+                  <span className="text-sm">sadeeshabperera@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Phone className="h-4 w-4 text-emerald-500" />
-                  <span className="text-sm">+254 700 000 000</span>
+                  <Languages  className="h-4 w-4 text-emerald-500" />
+                  <span className="text-sm">English & Sinhala</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin className="h-4 w-4 text-emerald-500" />
-                  <span className="text-sm">Colombo, Sri Lanka</span>
+                  <span className="text-sm">Kandana, Sri Lanka</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Globe className="h-4 w-4 text-emerald-500" />

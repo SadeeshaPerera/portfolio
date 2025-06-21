@@ -101,7 +101,7 @@ export default function Contact() {
                         Email
                       </p>
                       <p className="text-slate-800 dark:text-white font-medium">
-                        sample@.example.com
+                        sadeeshabperera@gmail.com
                       </p>
                     </div>
                   </div>

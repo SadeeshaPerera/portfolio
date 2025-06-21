@@ -44,7 +44,7 @@ export default function Projects() {
       github: "#",
       demo: "#",
       blog: null,
-      image: "/placeholder.svg?height=200&width=400",
+      image: "images/pipeline.png?height=200&width=400",
       icon: <GitBranch className="h-6 w-6" />,
     },
     {
@@ -65,7 +65,28 @@ export default function Projects() {
       github: "#",
       demo: "#",
       blog: null,
-      image: "/placeholder.svg?height=200&width=400",
+      image: "/images/automa?height=200&width=400",
+      icon: <Monitor className="h-6 w-6" />,
+    },
+    {
+      title: "Observability & Monitoring Stack",
+      description:
+        "Implemented comprehensive monitoring, logging, and alerting solution with custom dashboards and automated incident response for production systems.",
+      role: "Site Reliability Engineer",
+      outcome:
+        "Reduced MTTR by 50%, improved system visibility, and prevented 95% of potential outages",
+      techStack: [
+        "Prometheus",
+        "Grafana",
+        "ELK Stack",
+        "Jaeger",
+        "AlertManager",
+        "PagerDuty",
+      ],
+      github: "#",
+      demo: "#",
+      blog: null,
+      image: "/images/automation.jpg?height=200&width=400",
       icon: <Monitor className="h-6 w-6" />,
     },
   ];
@@ -157,6 +178,28 @@ export default function Projects() {
       demo: "#",
       blog: null,
       image: "/images/shoppingmate.png?height=200&width=400",
+      icon: <Monitor className="h-6 w-6" />,
+    },
+    {
+      title: "Financial Analytics Dashboard",
+      description:
+        "Built a real-time financial analytics platform with interactive charts, automated reporting, and machine learning-powered insights for investment decisions.",
+      role: "Full-Stack Developer & Data Engineer",
+      outcome:
+        "Processed 1M+ data points daily, improved decision-making speed by 40%",
+      techStack: [
+        "React",
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "Redis",
+        "Docker",
+        "ML Models",
+      ],
+      github: "#",
+      demo: "#",
+      blog: null,
+      image: "/images/mealrush.png?height=200&width=400",
       icon: <Monitor className="h-6 w-6" />,
     },
   ];
