@@ -27,111 +27,114 @@ import {
 export default function Projects() {
   const devopsProjects = [
     {
-      title: "Enterprise CI/CD Pipeline",
+      title: "Enterprise CI/CD Pipeline using CircleCI",
       description:
-        "Built a comprehensive GitOps workflow with automated testing, security scanning, and multi-environment deployments for a microservices architecture.",
-      role: "DevOps",
+        "Built a robust CI/CD pipeline using CircleCI for an enterprise-grade application. Integrated automated testing, build, and deployment stages with branch-based workflows and environment-specific configurations.",
+      role: "DevOps Engineering",
       outcome:
-        "Accelerated release cycles from monthly to daily, reduced bugs in production by 60%",
+        "Reduced deployment time by 70%, increased release reliability, and ensured consistent testing across multiple environments through pipeline automation.",
       techStack: [
-        "Jenkins",
-        "GitLab CI",
-        "ArgoCD",
+        "CircleCI",
         "Docker",
-        "SonarQube",
-        "Vault",
+        "GitHub",
+        "AWS EC2",
+        "AWS S3",
+        "YAML",
+        "Slack Notifications",
       ],
       github: "#",
-      demo: "#",
-      blog: null,
-      image: "images/pipeline.png?height=200&width=400",
+      //demo: "#",
+      blog: "#",
+      image: "/images/pipeline.png?height=200&width=400",
       icon: <GitBranch className="h-6 w-6" />,
     },
+
     {
-      title: "Observability & Monitoring Stack",
+      title: "AWS Cloud Projects Portfolio",
       description:
-        "Implemented comprehensive monitoring, logging, and alerting solution with custom dashboards and automated incident response for production systems.",
-      role: "Site Reliability Engineering",
+        "Completed a series of hands-on AWS projects covering cloud hosting, DevOps pipelines, IAM management, serverless integration, analytics, and networking.",
+      role: "Cloud Engineering",
       outcome:
-        "Reduced MTTR by 50%, improved system visibility, and prevented 95% of potential outages",
+        "Demonstrated proficiency across 15+ AWS services, built end-to-end cloud solutions, and showcased readiness for real-world cloud infrastructure and automation challenges.",
       techStack: [
-        "Prometheus",
-        "Grafana",
-        "ELK Stack",
-        "Jaeger",
-        "AlertManager",
-        "PagerDuty",
+        "Amazon S3",
+        "Lambda",
+        "QuickSight",
+        "CodeArtifact",
+        "CodeBuild",
+        "CodePipeline",
+        "VPC",
       ],
       github: "#",
-      demo: "#",
-      blog: null,
+      //demo: "#",
+      blog: "#",
       image: "/images/aws_all.jpg?height=200&width=400",
-      icon: <Monitor className="h-6 w-6" />,
+      icon: <Cloud className="h-6 w-6" />,
     },
-    {
-  title: "Bash Scripting & Automation",
-  description:
-    "Automated server provisioning, log rotation, scheduled tasks, and backup routines using Bash scripts with cron/systemd and infrastructure tools.",
-  role: "DevOps & Systems Automation",
-  outcome:
-    "Automated 90% of routine tasks, reduced manual errors by 70%, and cut server setup time to under 5 minutes.",
-  techStack: [
-    "Bash",
-    "Cron",
-    "systemd",
-    "Ansible",
-    "GitHub Actions",
-    "AWS CLI",
-    "jq",
-    "logrotate"
-  ],
-  github: "#",
-  demo: "#",
-  blog: null,
-  image: "/images/automation.jpg?height=200&width=400",
-  //icon: <Terminal className="h-6 w-6" />
-}
 
+    {
+      title: "Bash Scripting & Automation",
+      description:
+        "Automated server provisioning, log rotation, scheduled tasks, and backup routines using Bash scripts with cron/systemd and infrastructure tools.",
+      role: "DevOps & Systems Automation",
+      outcome:
+        "Automated 90% of routine tasks, reduced manual errors by 70%, and cut server setup time to under 5 minutes.",
+      techStack: [
+        "Bash",
+        "Cron",
+        "systemd",
+        "Ansible",
+        "GitHub Actions",
+        "AWS CLI",
+        "jq",
+        "logrotate",
+      ],
+      github: "#",
+      //demo: "#",
+      //blog: null,
+      image: "/images/automation.jpg?height=200&width=400",
+      //icon: <Terminal className="h-6 w-6" />
+    },
   ];
 
   const fullstackProjects = [
     {
-      title: "E-Commerce Platform with Microservices",
+      title: "MealRush - Online Food Ordering & Delivering System",
       description:
-        "Built a scalable e-commerce platform with React frontend, Node.js microservices, and automated deployment pipeline. Integrated payment processing and real-time inventory management.",
-      role: "Full-Stack Lead Developer",
+        "A complete platform enabling users to browse menus, place orders, manage restaurants and track deliveries in real time.",
+      role: "Full-Stack Development & DevOps",
       outcome:
-        "Handled 10K+ concurrent users, processed $2M+ in transactions, 99.8% uptime",
+        "Developed and deployed end-to-end app using cloud native technologies. Completed as a university project, enhancing teamwork, problem-solving, and deployment experience in a real-world scenario.",
       techStack: [
-        "React",
-        "Node.js",
-        "PostgreSQL",
-        "Redis",
         "Docker",
         "Kubernetes",
-        "Stripe API",
+        "YAML",
+        "CI/CD",
+        "GitOps",
+        "MERN",
+        "Microservices",
       ],
       github: "#",
       demo: "#",
-      blog: "#",
-      image: "./images/yumride.png?height=200&width=400",
-      icon: <Code className="h-6 w-6" />,
+      blog: null,
+      image: "/images/mealrush.png?height=200&width=400",
+      icon: <Monitor className="h-6 w-6" />,
     },
     {
-      title: "Real-Time Collaboration Platform",
+      title: "Blissify - Wedding Management System",
       description:
-        "Developed a Slack-like collaboration tool with real-time messaging, file sharing, video calls, and team management. Built with modern web technologies and deployed on AWS.",
+        "A full-featured application designed to streamline wedding planning by managing guest lists, vendors, budgets, schedules, and event details from a single platform.",
       role: "Full-Stack Development & DevOps",
       outcome:
-        "Supported 1000+ active users, 99.9% message delivery rate, sub-100ms latency",
+        "Enhanced proficiency in building scalable and user-centric systems through database design, backend logic, and responsive frontend interfaces.",
       techStack: [
-        "Next.js",
-        "Socket.io",
-        "PostgreSQL",
+        "React",
+        "Node.js",
+        "Express",
         "AWS",
-        "Docker",
-        "WebRTC",
-        "Redis",
+        "MongoDB",
+        "Tailwind CSS",
+        "Microservices",
       ],
       github: "#",
       demo: "#",
@@ -140,43 +143,34 @@ export default function Projects() {
       icon: <Globe className="h-6 w-6" />,
     },
     {
-      title: "Healthcare Management System",
+      title: "Health Insurance Management System",
       description:
         "Created a comprehensive healthcare platform with patient records, appointment scheduling, telemedicine features, and HIPAA-compliant infrastructure.",
-      role: "Full-Stack Development & Cloud Technolgies",
+      role: "Full-Stack Development & Software Testing",
       outcome:
         "Served 5000+ patients, reduced appointment scheduling time by 60%, HIPAA compliant",
       techStack: [
-        "Vue.js",
-        "Django",
-        "PostgreSQL",
-        "AWS",
-        "Docker",
-        "Terraform",
-        "HIPAA",
+        "JavaScript",
+        "PHP",
+        "phpMyAdmin",
+        "SQL",
+        "Bootstrap",
+        "HTML",
+        "CSS",
       ],
       github: "#",
       demo: "#",
-      blog: "#",
       image: "images/lifecare.png?height=200&width=400",
       icon: <Database className="h-6 w-6" />,
     },
     {
-      title: "Financial Analytics Dashboard",
+      title: "Shopping Mall Management Application",
       description:
         "Built a real-time financial analytics platform with interactive charts, automated reporting, and machine learning-powered insights for investment decisions.",
-      role: "Full-Stack Developer & Data Engineer",
+      role: "Full-Stack Development & Project Management",
       outcome:
         "Processed 1M+ data points daily, improved decision-making speed by 40%",
-      techStack: [
-        "React",
-        "Python",
-        "FastAPI",
-        "PostgreSQL",
-        "Redis",
-        "Docker",
-        "ML Models",
-      ],
+      techStack: ["Dart", "Flutter", "Firebase", "REST APIs", "Figma"],
       github: "#",
       demo: "#",
       blog: null,
@@ -184,44 +178,36 @@ export default function Projects() {
       icon: <Monitor className="h-6 w-6" />,
     },
     {
-      title: "Financial Analytics Dashboard",
+      title: "YumRide - Online Food Ordering System using MVC Architecture",
       description:
-        "Built a real-time financial analytics platform with interactive charts, automated reporting, and machine learning-powered insights for investment decisions.",
-      role: "Full-Stack Developer & Data Engineer",
+        "A web-based system developed following the MVC (Model-View-Controller) architectural pattern to streamline online food ordering, including menu browsing, cart management, and order processing.",
+      role: "Full-Stack Development",
       outcome:
-        "Processed 1M+ data points daily, improved decision-making speed by 40%",
-      techStack: [
-        "React",
-        "Python",
-        "FastAPI",
-        "PostgreSQL",
-        "Redis",
-        "Docker",
-        "ML Models",
-      ],
+        "Strengthened understanding of software architecture principles and MVC design pattern. Gained hands-on experience in separating concerns, modular code organization, and implementing core backend logic in a structured and scalable way.",
+      techStack: ["Java", "MySQL", "JSP", "JDBC", "CSS", "Servlet", "Eclipse"],
       github: "#",
       demo: "#",
-      blog: null,
-      image: "/images/mealrush.png?height=200&width=400",
-      icon: <Monitor className="h-6 w-6" />,
+      image: "./images/yumride.png?height=200&width=400",
+      icon: <Code className="h-6 w-6" />,
     },
   ];
 
   const mobileProjects = [
     {
-      title: "Bus Booking App",
+      title: "BGLK - Bus Booking App",
       description:
-        "Developed a secure mobile banking application with real-time transaction monitoring, account management, and fund transfer features.",
-      role: "Mobile Developer",
+        "A cross-platform mobile application that enables users to search bus routes, check schedules, reserve seats, and receive booking confirmations via QR codes.",
+      role: "Cross Platform Development",
       outcome:
-        "Enabled 100K+ users to manage their finances on-the-go, reduced transaction times by 70%",
+        "Successfully implemented a real-world transport solution as part of a university group project, improving skills in UI/UX design and collaborative development.",
       techStack: [
-        "React Native",
-        "Node.js",
-        "MongoDB",
-        "AWS Amplify",
-        "Jest",
-        "Docker",
+        "Flutter",
+        "Firebase",
+        "Google Maps API",
+        "Figma",
+        "Dart",
+        "UI/UX Design",
+        "REST APIs",
       ],
       github: "#",
       demo: "#",
@@ -232,16 +218,16 @@ export default function Projects() {
     {
       title: "Task Management App",
       description:
-        "Created a cross-platform fitness tracking application with real-time GPS tracking, workout logging, and social sharing features.",
-      role: "Mobile Developer",
+        "A native Android application for efficient task organization, reminders, and daily productivity tracking.",
+      role: "Native Mobile Development",
       outcome:
-        "Acquired 50K+ downloads, 4.8+ average rating, featured in 'Top Fitness Apps'",
+        "Delivered a fully functional app with offline support, local storage, and clean code architecture.",
       techStack: [
-        "Flutter",
-        "Dart",
-        "Firebase",
-        "Google Maps API",
-        "Stripe API",
+        "Kotlin",
+        "room-persistence-library",
+        "kotlinx.coroutines",
+        "Dagger2",
+        "Retrofit",
       ],
       github: "#",
       demo: "#",
@@ -342,7 +328,7 @@ export default function Projects() {
             className="border-slate-200 dark:border-slate-700"
           >
             <a href={project.blog} target="_blank" rel="noopener noreferrer">
-              Case Study
+              Documentation
             </a>
           </Button>
         )}

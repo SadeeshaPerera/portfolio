@@ -204,7 +204,7 @@ export default function Services() {
             </TabsTrigger>
             <TabsTrigger value="mobile" className="flex items-center gap-2">
               <Smartphone className="h-4 w-4" />
-              Mobile Development
+              Mobile Services
             </TabsTrigger>
           </TabsList>
 

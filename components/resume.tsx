@@ -21,8 +21,8 @@ export default function Resume() {
     {
       title: "Intern DevOps Engineer",
       company: "Zincat Technology",
-      location: "Remote",
-      period: "2023 - Present",
+      location: "On-Site, Rathmalana, Sri Lanka",
+      period: "2024 - Present",
       type: "hybrid",
       description: [
         "Reduced deployment time by 75% and improved application performance by 40%",
@@ -34,16 +34,16 @@ export default function Resume() {
       ],
     },
     {
-      title: "Full-Stack Developer",
+      title: "Software Engineering Student",
       company: "SLIIT",
-      location: "Colombo, Sri Lanka",
-      period: "2021 - Present",
+      location: "Malabe, Sri Lanka",
+      period: "2022 - Present",
       type: "fullstack",
       description: [
         "Developed 5+ web applications using React, Vue.js, and Django",
         "Designed and implemented PostgreSQL databases with optimized queries",
         "Created responsive UIs and integrated third-party APIs",
-        "Introduced Docker containerization and basic CI/CD practices",
+        "Set up Docker containerization and basic CI/CD practices",
       ],
     },
   ];
@@ -60,13 +60,13 @@ export default function Resume() {
     {
       degree: "G.C.E Advanced Level",
       institution: "De Mazenod College",
-      period: "2018 - 2021",
+      period: "2019 - 2021",
       details: "Focused on Mathematics, Physics, Chemistry and ICT",
     },
     {
       degree: "G.C.E Ordinary Level",
       institution: "De Mazenod College",
-      period: "2018 - 2021",
+      period: "2008 - 2018",
       details:
         "Completed with 9 passes including Mathematics, Science, and English",
     },
