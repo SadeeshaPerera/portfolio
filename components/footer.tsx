@@ -35,23 +35,23 @@ export default function Footer() {
 
           <div className="flex gap-4 mb-4 md:mb-0">
             <a
-              href=""
+              href="https://www.linkedin.com/in/sadeesha-perera"
               className="p-2 rounded-full hover:bg-jungle-800 transition-colors"
               aria-label="LinkedIn"
             >
               <Linkedin className="h-5 w-5" />
             </a>
             <a
-              href=""
+              href="https://github.com/SadeeshaPerera"
               className="p-2 rounded-full hover:bg-jungle-800 transition-colors"
               aria-label="GitHub"
             >
               <Github className="h-5 w-5" />
             </a>
             <a
-              href=""
+              href="https://www.instagram.com/sadeesha_b_perera_"
               className="p-2 rounded-full hover:bg-jungle-800 transition-colors"
-              aria-label="GitHub"
+              aria-label="Instagram"
             >
               <Instagram className="h-5 w-5" />
             </a>
