@@ -30,7 +30,7 @@ export default function Projects() {
       title: "Enterprise CI/CD Pipeline",
       description:
         "Built a comprehensive GitOps workflow with automated testing, security scanning, and multi-environment deployments for a microservices architecture.",
-      role: "DevOps Architect",
+      role: "DevOps",
       outcome:
         "Accelerated release cycles from monthly to daily, reduced bugs in production by 60%",
       techStack: [
@@ -51,7 +51,7 @@ export default function Projects() {
       title: "Observability & Monitoring Stack",
       description:
         "Implemented comprehensive monitoring, logging, and alerting solution with custom dashboards and automated incident response for production systems.",
-      role: "Site Reliability Engineer",
+      role: "Site Reliability Engineering",
       outcome:
         "Reduced MTTR by 50%, improved system visibility, and prevented 95% of potential outages",
       techStack: [
@@ -69,26 +69,29 @@ export default function Projects() {
       icon: <Monitor className="h-6 w-6" />,
     },
     {
-      title: "Observability & Monitoring Stack",
-      description:
-        "Implemented comprehensive monitoring, logging, and alerting solution with custom dashboards and automated incident response for production systems.",
-      role: "Site Reliability Engineer",
-      outcome:
-        "Reduced MTTR by 50%, improved system visibility, and prevented 95% of potential outages",
-      techStack: [
-        "Prometheus",
-        "Grafana",
-        "ELK Stack",
-        "Jaeger",
-        "AlertManager",
-        "PagerDuty",
-      ],
-      github: "#",
-      demo: "#",
-      blog: null,
-      image: "/images/automation.jpg?height=200&width=400",
-      icon: <Monitor className="h-6 w-6" />,
-    },
+  title: "Bash Scripting & Automation",
+  description:
+    "Automated server provisioning, log rotation, scheduled tasks, and backup routines using Bash scripts with cron/systemd and infrastructure tools.",
+  role: "DevOps & Systems Automation",
+  outcome:
+    "Automated 90% of routine tasks, reduced manual errors by 70%, and cut server setup time to under 5 minutes.",
+  techStack: [
+    "Bash",
+    "Cron",
+    "systemd",
+    "Ansible",
+    "GitHub Actions",
+    "AWS CLI",
+    "jq",
+    "logrotate"
+  ],
+  github: "#",
+  demo: "#",
+  blog: null,
+  image: "/images/automation.jpg?height=200&width=400",
+  //icon: <Terminal className="h-6 w-6" />
+}
+
   ];
 
   const fullstackProjects = [
@@ -257,13 +260,13 @@ export default function Projects() {
               type === "devops" ? "text-devops-500" : "text-emerald-500"
             } dark:text-opacity-80`}
           >
-            {project.icon}
+            {/* {project.icon} */}
           </div>
         </div>
         <img
           src={project.image || "/placeholder.svg"}
           alt={project.title}
-          className="w-full h-full object-cover opacity-20 transition-opacity duration-500 group-hover:opacity-40"
+          className="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-40"
         />
       </div>
       <CardHeader>
