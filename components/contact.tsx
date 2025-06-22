@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
-import { Github, Linkedin, Mail, FileText } from "lucide-react";
+import { Github, Linkedin, Mail, FileText, SquarePen  } from "lucide-react";
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {
@@ -101,7 +101,7 @@ export default function Contact() {
                         Email
                       </p>
                       <p className="text-slate-800 dark:text-white font-medium">
-                        sample@.example.com
+                        sadeeshabperera@gmail.com
                       </p>
                     </div>
                   </div>
@@ -112,26 +112,33 @@ export default function Contact() {
                     </h4>
                     <div className="flex gap-4">
                       <a
-                        href="#"
+                        href="https://www.linkedin.com/in/sadeesha-perera"
                         className="bg-slate-100 dark:bg-slate-800 p-3 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
                         aria-label="LinkedIn"
                       >
                         <Linkedin className="h-5 w-5 text-slate-700 dark:text-slate-300" />
                       </a>
                       <a
-                        href="#"
+                        href="https://github.com/SadeeshaPerera"
                         className="bg-slate-100 dark:bg-slate-800 p-3 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
                         aria-label="GitHub"
                       >
                         <Github className="h-5 w-5 text-slate-700 dark:text-slate-300" />
                       </a>
-                      <a
+                       <a
+                        href="https://medium.com/@sadeeshabperera"
+                        className="bg-slate-100 dark:bg-slate-800 p-3 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+                        aria-label="Blog"
+                      >
+                        <SquarePen className="h-5 w-5 text-slate-700 dark:text-slate-300" />
+                      </a>
+                      {/* <a
                         href="#"
                         className="bg-slate-100 dark:bg-slate-800 p-3 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
                         aria-label="Resume"
                       >
                         <FileText className="h-5 w-5 text-slate-700 dark:text-slate-300" />
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>

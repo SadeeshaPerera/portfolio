@@ -7,7 +7,7 @@ import Navbar from "@/components/navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Sadeesha Perera | Full-Stack DevOps Engineer",
+  title: "Sadeesha Perera | DevOps Engineer",
   description:
     "DevOps Engineer specializing in modern web applications and cloud infrastructure",
   icons: {

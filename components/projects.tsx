@@ -27,136 +27,212 @@ import {
 export default function Projects() {
   const devopsProjects = [
     {
-      title: "Enterprise CI/CD Pipeline",
+      title: "Enterprise CI/CD Pipeline using CircleCI",
       description:
-        "Built a comprehensive GitOps workflow with automated testing, security scanning, and multi-environment deployments for a microservices architecture.",
-      role: "DevOps Architect",
+        "Built a robust CI/CD pipeline using CircleCI for an enterprise-grade application. Integrated automated testing, build, and deployment stages with branch-based workflows and environment-specific configurations.",
+      role: "DevOps Engineering",
       outcome:
-        "Accelerated release cycles from monthly to daily, reduced bugs in production by 60%",
+        "Reduced deployment time by 70%, increased release reliability, and ensured consistent testing across multiple environments through pipeline automation.",
       techStack: [
-        "Jenkins",
-        "GitLab CI",
-        "ArgoCD",
+        "CircleCI",
         "Docker",
-        "SonarQube",
-        "Vault",
+        "GitHub",
+        "AWS EC2",
+        "AWS S3",
+        "YAML",
+        "Slack Notifications",
       ],
-      github: "#",
-      demo: "#",
-      blog: null,
-      image: "/placeholder.svg?height=200&width=400",
+      github: "https://github.com/SadeeshaPerera/ci-cd-configs",
+      //demo: "#",
+      //blog: "#",
+      image: "/images/pipeline.png?height=200&width=400",
       icon: <GitBranch className="h-6 w-6" />,
     },
+
     {
-      title: "Observability & Monitoring Stack",
+      title: "AWS Cloud Projects Portfolio",
       description:
-        "Implemented comprehensive monitoring, logging, and alerting solution with custom dashboards and automated incident response for production systems.",
-      role: "Site Reliability Engineer",
+        "Completed a series of hands-on AWS projects covering cloud hosting, DevOps pipelines, IAM management, serverless integration, analytics, and networking.",
+      role: "Cloud Engineering",
       outcome:
-        "Reduced MTTR by 50%, improved system visibility, and prevented 95% of potential outages",
+        "Demonstrated proficiency across 15+ AWS services, built end-to-end cloud solutions, and showcased readiness for real-world cloud infrastructure and automation challenges.",
       techStack: [
-        "Prometheus",
-        "Grafana",
-        "ELK Stack",
-        "Jaeger",
-        "AlertManager",
-        "PagerDuty",
+        "Amazon S3",
+        "Lambda",
+        "QuickSight",
+        "CodeArtifact",
+        "CodeBuild",
+        "CodePipeline",
+        "VPC",
       ],
-      github: "#",
-      demo: "#",
-      blog: null,
-      image: "/placeholder.svg?height=200&width=400",
-      icon: <Monitor className="h-6 w-6" />,
+      //github: "#",
+      //demo: "#",
+      blog: "https://github.com/SadeeshaPerera/aws-projects",
+      image: "/images/aws_all.jpg?height=200&width=400",
+      icon: <Cloud className="h-6 w-6" />,
+    },
+
+    {
+      title: "Bash Scripting & Automation",
+      description:
+        "Automated server provisioning, log rotation, scheduled tasks, and backup routines using Bash scripts with cron/systemd and infrastructure tools.",
+      role: "DevOps & Systems Automation",
+      outcome:
+        "Automated 90% of routine tasks, reduced manual errors by 70%, and cut server setup time to under 5 minutes.",
+      techStack: [
+        "Bash",
+        "Cron",
+        "systemd",
+        "Ansible",
+        "GitHub Actions",
+        "AWS CLI",
+        "logrotate",
+      ],
+      github: "https://github.com/SadeeshaPerera/bash-automation-scripts",
+      //demo: "#",
+      //blog: null,
+      image: "/images/automation.jpg?height=200&width=400",
+      //icon: <Terminal className="h-6 w-6" />
     },
   ];
 
   const fullstackProjects = [
     {
-      title: "E-Commerce Platform with Microservices",
+      title: "MealRush - Online Food Ordering & Delivering System",
       description:
-        "Built a scalable e-commerce platform with React frontend, Node.js microservices, and automated deployment pipeline. Integrated payment processing and real-time inventory management.",
-      role: "Full-Stack Lead Developer",
+        "A complete platform enabling users to browse menus, place orders, manage restaurants and track deliveries in real time.",
+      role: "Full-Stack Development & DevOps",
       outcome:
-        "Handled 10K+ concurrent users, processed $2M+ in transactions, 99.8% uptime",
+        "Developed and deployed end-to-end app using cloud native technologies. Completed as a university project, enhancing teamwork, problem-solving, and deployment experience in a real-world scenario.",
+      techStack: [
+        "Docker",
+        "Kubernetes",
+        "YAML",
+        "CI/CD",
+        "GitOps",
+        "MERN",
+        "Microservices",
+      ],
+      github: "https://github.com/meal-rush/",
+      //demo: "#",
+      blog: null,
+      image: "/images/mealrush.png?height=200&width=400",
+      icon: <Monitor className="h-6 w-6" />,
+    },
+    {
+      title: "Blissify - Wedding Management System",
+      description:
+        "A full-featured application designed to streamline wedding planning by managing guest lists, vendors, budgets, schedules, and event details from a single platform.",
+      role: "Full-Stack Development & DevOps",
+      outcome:
+        "Enhanced proficiency in building scalable and user-centric systems through database design, backend logic, and responsive frontend interfaces.",
       techStack: [
         "React",
         "Node.js",
-        "PostgreSQL",
-        "Redis",
-        "Docker",
-        "Kubernetes",
-        "Stripe API",
-      ],
-      github: "#",
-      demo: "#",
-      blog: "#",
-      image: "/placeholder.svg?height=200&width=400",
-      icon: <Code className="h-6 w-6" />,
-    },
-    {
-      title: "Real-Time Collaboration Platform",
-      description:
-        "Developed a Slack-like collaboration tool with real-time messaging, file sharing, video calls, and team management. Built with modern web technologies and deployed on AWS.",
-      role: "Full-Stack Development & DevOps",
-      outcome:
-        "Supported 1000+ active users, 99.9% message delivery rate, sub-100ms latency",
-      techStack: [
-        "Next.js",
-        "Socket.io",
-        "PostgreSQL",
+        "Express",
         "AWS",
-        "Docker",
-        "WebRTC",
-        "Redis",
+        "MongoDB",
+        "Tailwind CSS",
+        "Microservices",
       ],
-      github: "#",
-      demo: "#",
+      github:
+        "https://github.com/SadeeshaPerera/Blissify--Wedding-Management-System",
+      demo: "https://youtu.be/ZZwhkC4C63M",
       blog: null,
-      image: "/placeholder.svg?height=200&width=400",
+      image: "/images/blissify.png?height=200&width=400",
       icon: <Globe className="h-6 w-6" />,
     },
     {
-      title: "Healthcare Management System",
+      title: "Health Insurance Management System",
       description:
         "Created a comprehensive healthcare platform with patient records, appointment scheduling, telemedicine features, and HIPAA-compliant infrastructure.",
-      role: "Full-Stack Development & Cloud Technolgies",
+      role: "Full-Stack Development & Software Testing",
       outcome:
         "Served 5000+ patients, reduced appointment scheduling time by 60%, HIPAA compliant",
       techStack: [
-        "Vue.js",
-        "Django",
-        "PostgreSQL",
-        "AWS",
-        "Docker",
-        "Terraform",
-        "HIPAA",
+        "JavaScript",
+        "PHP",
+        "phpMyAdmin",
+        "SQL",
+        "Bootstrap",
+        "HTML",
+        "CSS",
       ],
-      github: "#",
-      demo: "#",
-      blog: "#",
-      image: "/placeholder.svg?height=200&width=400",
+      github: "https://github.com/SadeeshaPerera/LifeCare--Health-Insurance-Management-System",
+      demo: "https://youtu.be/icUjZI3ujTc",
+      image: "images/lifecare.png?height=200&width=400",
       icon: <Database className="h-6 w-6" />,
     },
     {
-      title: "Financial Analytics Dashboard",
+      title: "Shopping Mall Management Application",
       description:
         "Built a real-time financial analytics platform with interactive charts, automated reporting, and machine learning-powered insights for investment decisions.",
-      role: "Full-Stack Developer & Data Engineer",
+      role: "Full-Stack Development & Project Management",
       outcome:
         "Processed 1M+ data points daily, improved decision-making speed by 40%",
-      techStack: [
-        "React",
-        "Python",
-        "FastAPI",
-        "PostgreSQL",
-        "Redis",
-        "Docker",
-        "ML Models",
-      ],
-      github: "#",
-      demo: "#",
+      techStack: ["Dart", "Flutter", "Firebase", "REST APIs", "Figma"],
+      github: "https://github.com/SadeeshaPerera/shopping_mall_application",
+      demo: "https://sadeeshaperera.github.io/shopping_mall_application/",
       blog: null,
-      image: "/placeholder.svg?height=200&width=400",
+      image: "/images/shoppingmate.png?height=200&width=400",
+      icon: <Monitor className="h-6 w-6" />,
+    },
+    {
+      title: "YumRide - Online Food Ordering System using MVC Architecture",
+      description:
+        "A web-based system developed following the MVC (Model-View-Controller) architectural pattern to streamline online food ordering, including menu browsing, cart management, and order processing.",
+      role: "Full-Stack Development",
+      outcome:
+        "Strengthened understanding of software architecture principles and MVC design pattern. Gained hands-on experience in separating concerns, modular code organization, and implementing core backend logic in a structured and scalable way.",
+      techStack: ["Java", "MySQL", "JSP", "JDBC", "CSS", "Servlet", "Eclipse"],
+      github: "https://github.com/SadeeshaPerera/YumRide--Online-Food-Ordering-System",
+      demo: "https://youtu.be/t8QaBHU6ihk",
+      image: "./images/yumride.png?height=200&width=400",
+      icon: <Code className="h-6 w-6" />,
+    },
+  ];
+
+  const mobileProjects = [
+    {
+      title: "BGLK - Bus Booking App",
+      description:
+        "A cross-platform mobile application that enables users to search bus routes, check schedules, reserve seats, and receive booking confirmations via QR codes.",
+      role: "Cross Platform Development",
+      outcome:
+        "Successfully implemented a real-world transport solution as part of a university group project, improving skills in UI/UX design and collaborative development.",
+      techStack: [
+        "Flutter",
+        "Firebase",
+        "Google Maps API",
+        "Figma",
+        "Dart",
+        "UI/UX Design",
+        "REST APIs",
+      ],
+      github: "https://github.com/SadeeshaPerera/bus_booking_app",
+      demo: "https://youtu.be/DwPL5LmwvXI?si=Rq38S2UF9OuObj8Q",
+      blog: null,
+      image: "/images/bglk.png?height=200&width=400",
+      icon: <Code className="h-6 w-6" />,
+    },
+    {
+      title: "Task Management App",
+      description:
+        "A native Android application for efficient task organization, reminders, and daily productivity tracking.",
+      role: "Native Mobile Development",
+      outcome:
+        "Delivered a fully functional app with offline support, local storage, and clean code architecture.",
+      techStack: [
+        "Kotlin",
+        "room-persistence-library",
+        "kotlinx.coroutines",
+        "Dagger2",
+        "Retrofit",
+      ],
+      github: "https://github.com/SadeeshaPerera/android-task-app",
+      demo: "https://youtu.be/wW00BAkv7PM?si=1wkgkOZksN-z2sA7",
+      blog: null,
+      image: "/images/tasky.png?height=200&width=400",
       icon: <Monitor className="h-6 w-6" />,
     },
   ];
@@ -170,13 +246,13 @@ export default function Projects() {
               type === "devops" ? "text-devops-500" : "text-emerald-500"
             } dark:text-opacity-80`}
           >
-            {project.icon}
+            {/* {project.icon} */}
           </div>
         </div>
         <img
           src={project.image || "/placeholder.svg"}
           alt={project.title}
-          className="w-full h-full object-cover opacity-20 transition-opacity duration-500 group-hover:opacity-40"
+          className="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-40"
         />
       </div>
       <CardHeader>
@@ -240,7 +316,7 @@ export default function Projects() {
             className="border-slate-200 dark:border-slate-700"
           >
             <a href={project.demo} target="_blank" rel="noopener noreferrer">
-              <ExternalLink className="h-4 w-4 mr-1" /> Live
+              <ExternalLink className="h-4 w-4 mr-1" /> Demo
             </a>
           </Button>
         )}
@@ -252,7 +328,7 @@ export default function Projects() {
             className="border-slate-200 dark:border-slate-700"
           >
             <a href={project.blog} target="_blank" rel="noopener noreferrer">
-              Case Study
+              Documentation
             </a>
           </Button>
         )}
@@ -282,7 +358,7 @@ export default function Projects() {
         </motion.div>
 
         <Tabs defaultValue="devops" className="w-full">
-          <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-8">
+          <TabsList className="grid w-full max-w-md mx-auto grid-cols-3 mb-8">
             <TabsTrigger value="devops" className="flex items-center gap-2">
               <Cloud className="h-4 w-4" />
               DevOps Projects
@@ -290,6 +366,10 @@ export default function Projects() {
             <TabsTrigger value="fullstack" className="flex items-center gap-2">
               <Code className="h-4 w-4" />
               Full-Stack Projects
+            </TabsTrigger>
+            <TabsTrigger value="mobile" className="flex items-center gap-2">
+              <Monitor className="h-4 w-4" />
+              Mobile Projects
             </TabsTrigger>
           </TabsList>
 
@@ -330,6 +410,27 @@ export default function Projects() {
                   viewport={{ once: true }}
                 >
                   <ProjectCard project={project} type="fullstack" />
+                </motion.div>
+              ))}
+            </motion.div>
+          </TabsContent>
+
+          <TabsContent value="mobile">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="grid grid-cols-1 md:grid-cols-2 gap-8"
+            >
+              {mobileProjects.map((project, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  <ProjectCard project={project} type="mobile" />
                 </motion.div>
               ))}
             </motion.div>

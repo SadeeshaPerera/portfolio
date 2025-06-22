@@ -137,7 +137,7 @@ export default function About() {
               >
                 <img
                   src="/images/cartoon.png"
-                  alt="Sadeesha Perera - Full-Stack DevOps Engineer"
+                  alt="Sadeesha Perera - DevOps Engineer"
                   className="w-full h-full object-contain p-4"
                 />
               </motion.div>
@@ -145,7 +145,7 @@ export default function About() {
                 <h3 className="text-white text-xl font-bold">
                   Sadeesha Perera
                 </h3>
-                <p className="text-emerald-200">Full-Stack DevOps Engineer</p>
+                <p className="text-emerald-200">DevOps Enthusiast</p>
               </div>
             </div>
           </motion.div>

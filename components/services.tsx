@@ -1,9 +1,15 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { motion } from "framer-motion";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   Cloud,
   Server,
@@ -16,7 +22,7 @@ import {
   Globe,
   Smartphone,
   Palette,
-} from "lucide-react"
+} from "lucide-react";
 
 export default function Services() {
   const devopsServices = [
@@ -56,7 +62,7 @@ export default function Services() {
         "Integrate security best practices, vulnerability scanning, and compliance automation into your DevOps workflows.",
       icon: <Shield className="h-10 w-10 text-devops-500" />,
     },
-  ]
+  ];
 
   const fullstackServices = [
     {
@@ -95,11 +101,50 @@ export default function Services() {
         "Transform designs into pixel-perfect, interactive user interfaces with modern CSS frameworks and animation libraries.",
       icon: <Palette className="h-10 w-10 text-emerald-500" />,
     },
-  ]
+  ];
+
+  const mobileServices = [
+    {
+      title: "iOS Application Development",
+      description:
+        "Build high-performance, native iOS applications using Swift and Objective-C, following Apple’s design guidelines.",
+      icon: <Smartphone className="h-10 w-10 text-blue-500" />,
+    },
+    {
+      title: "Android Application Development",
+      description:
+        "Create robust, native Android applications using Kotlin and Java, adhering to Google’s material design principles.",
+      icon: <Smartphone className="h-10 w-10 text-green-500" />,
+    },
+    {
+      title: "Cross-Platform Mobile Development",
+      description:
+        "Develop mobile applications for both iOS and Android using React Native, Flutter, or Xamarin for faster time-to-market.",
+      icon: <Smartphone className="h-10 w-10 text-purple-500" />,
+    },
+    {
+      title: "Mobile UI/UX Design",
+      description:
+        "Design intuitive and engaging user interfaces for mobile applications, ensuring a seamless user experience across all devices.",
+      icon: <Palette className="h-10 w-10 text-pink-500" />,
+    },
+    {
+      title: "App Store Optimization",
+      description:
+        "Optimize your mobile applications for better visibility and ranking on App Store and Google Play Store.",
+      icon: <Globe className="h-10 w-10 text-red-500" />,
+    },
+    {
+      title: "Mobile App Maintenance & Support",
+      description:
+        "Provide ongoing maintenance and support for mobile applications, including updates, bug fixes, and performance optimization.",
+      icon: <Shield className="h-10 w-10 text-orange-500" />,
+    },
+  ];
 
   const scrollToContact = () => {
-    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
-  }
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+  };
 
   const ServiceCard = ({ service, delay }: { service: any; delay: number }) => (
     <motion.div
@@ -110,8 +155,12 @@ export default function Services() {
     >
       <Card className="h-full border-slate-200 dark:border-slate-700 hover:shadow-lg transition-all duration-300 hover:scale-105">
         <CardHeader className="text-center">
-          <div className="mx-auto rounded-full p-3 bg-slate-100 dark:bg-slate-800 w-fit mb-4">{service.icon}</div>
-          <CardTitle className="text-lg text-slate-800 dark:text-white">{service.title}</CardTitle>
+          <div className="mx-auto rounded-full p-3 bg-slate-100 dark:bg-slate-800 w-fit mb-4">
+            {service.icon}
+          </div>
+          <CardTitle className="text-lg text-slate-800 dark:text-white">
+            {service.title}
+          </CardTitle>
         </CardHeader>
         <CardContent>
           <CardDescription className="text-slate-600 dark:text-slate-300 text-center">
@@ -120,7 +169,7 @@ export default function Services() {
         </CardContent>
       </Card>
     </motion.div>
-  )
+  );
 
   return (
     <section id="services" className="py-20 bg-slate-50 dark:bg-slate-800">
@@ -132,16 +181,19 @@ export default function Services() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-800 dark:text-white mb-4">Services Offered</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-800 dark:text-white mb-4">
+            Services Offered
+          </h2>
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
-            Comprehensive full-stack development and DevOps solutions to accelerate your development lifecycle and
-            deliver exceptional user experiences.
+            Comprehensive full-stack development and DevOps solutions to
+            accelerate your development lifecycle and deliver exceptional user
+            experiences.
           </p>
           <div className="h-1 w-20 bg-gradient-to-r from-devops-500 to-emerald-500 mx-auto mt-4"></div>
         </motion.div>
 
         <Tabs defaultValue="devops" className="w-full">
-          <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-8">
+          <TabsList className="grid w-full max-w-md mx-auto grid-cols-3 mb-8">
             <TabsTrigger value="devops" className="flex items-center gap-2">
               <Cloud className="h-4 w-4" />
               DevOps Services
@@ -150,12 +202,20 @@ export default function Services() {
               <Code className="h-4 w-4" />
               Full-Stack Services
             </TabsTrigger>
+            <TabsTrigger value="mobile" className="flex items-center gap-2">
+              <Smartphone className="h-4 w-4" />
+              Mobile Services
+            </TabsTrigger>
           </TabsList>
 
           <TabsContent value="devops">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {devopsServices.map((service, index) => (
-                <ServiceCard key={index} service={service} delay={index * 0.1} />
+                <ServiceCard
+                  key={index}
+                  service={service}
+                  delay={index * 0.1}
+                />
               ))}
             </div>
           </TabsContent>
@@ -163,7 +223,23 @@ export default function Services() {
           <TabsContent value="fullstack">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {fullstackServices.map((service, index) => (
-                <ServiceCard key={index} service={service} delay={index * 0.1} />
+                <ServiceCard
+                  key={index}
+                  service={service}
+                  delay={index * 0.1}
+                />
+              ))}
+            </div>
+          </TabsContent>
+
+          <TabsContent value="mobile">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {mobileServices.map((service, index) => (
+                <ServiceCard
+                  key={index}
+                  service={service}
+                  delay={index * 0.1}
+                />
               ))}
             </div>
           </TabsContent>
@@ -186,5 +262,5 @@ export default function Services() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

@@ -13,6 +13,7 @@ import {
   Calendar,
   Cloud,
   Code,
+  Languages,
 } from "lucide-react";
 
 export default function Resume() {
@@ -20,8 +21,8 @@ export default function Resume() {
     {
       title: "Intern DevOps Engineer",
       company: "Zincat Technology",
-      location: "Remote",
-      period: "2023 - Present",
+      location: "On-Site, Rathmalana, Sri Lanka",
+      period: "2024 - Present",
       type: "hybrid",
       description: [
         "Reduced deployment time by 75% and improved application performance by 40%",
@@ -33,16 +34,16 @@ export default function Resume() {
       ],
     },
     {
-      title: "Full-Stack Developer",
-      company: "SLIIT",
-      location: "Colombo, Sri Lanka",
-      period: "2021 - Present",
+      title: "Software Engineering Student",
+      company: "Sri Lanka Institute of Information Technology",
+      location: "Malabe, Sri Lanka",
+      period: "2022 - Present",
       type: "fullstack",
       description: [
         "Developed 5+ web applications using React, Vue.js, and Django",
         "Designed and implemented PostgreSQL databases with optimized queries",
         "Created responsive UIs and integrated third-party APIs",
-        "Introduced Docker containerization and basic CI/CD practices",
+        "Set up Docker containerization and basic CI/CD practices",
       ],
     },
   ];
@@ -51,7 +52,7 @@ export default function Resume() {
     {
       degree:
         "Bachelor degree in Information Technology specializing in Software Engineering",
-      institution: "SLIIT",
+      institution: "Sri Lanka Institute of Information Technology",
       period: "2022 - Present",
       details:
         "Focus on Software Engineering, Systems Programming, and Database Design",
@@ -59,13 +60,13 @@ export default function Resume() {
     {
       degree: "G.C.E Advanced Level",
       institution: "De Mazenod College",
-      period: "2018 - 2021",
-      details: "Focused on Mathematics, Physics, and Information Technology",
+      period: "2019 - 2021",
+      details: "Focused on Mathematics, Physics, Chemistry and ICT",
     },
     {
       degree: "G.C.E Ordinary Level",
       institution: "De Mazenod College",
-      period: "2018 - 2021",
+      period: "2008 - 2018",
       details:
         "Completed with 9 passes including Mathematics, Science, and English",
     },
@@ -197,15 +198,15 @@ export default function Resume() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 <div className="flex items-center gap-2">
                   <Mail className="h-4 w-4 text-emerald-500" />
-                  <span className="text-sm">sample@gmail.com</span>
+                  <span className="text-sm">sadeeshabperera@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Phone className="h-4 w-4 text-emerald-500" />
-                  <span className="text-sm">+254 700 000 000</span>
+                  <Languages className="h-4 w-4 text-emerald-500" />
+                  <span className="text-sm">English & Sinhala</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin className="h-4 w-4 text-emerald-500" />
-                  <span className="text-sm">Colombo, Sri Lanka</span>
+                  <span className="text-sm">Kandana, Sri Lanka</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Globe className="h-4 w-4 text-emerald-500" />
@@ -397,6 +398,128 @@ export default function Resume() {
             </motion.div> */}
           </div>
         </div>
+
+        {/* Volunteering Section */}
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          viewport={{ once: true }}
+        >
+          <h3 className="text-3xl font-bold text-slate-800 dark:text-white mb-8 mt-8 text-center ">
+            Volunteering Experience
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                organization: "Mozilla Campus Club of SLIIT",
+                location: "Malabe, Western Province, Sri Lanka",
+                roles: [
+                  {
+                    title: "President",
+                    duration: "May 2025 – Present",
+                    description:
+                      "Led the club's initiatives, organized events, and managed overall operations.",
+                  },
+                  {
+                    title: "Subcommittee Member",
+                    duration: "Apr 2024 – Apr 2025",
+                    description:
+                      "Assisted in planning and executing club activities and events.",
+                  },
+                  {
+                    title: "Member",
+                    duration: "May 2023 – May 2024",
+                    description:
+                      "Participated in club meetings and contributed to various projects.",
+                  },
+                ],
+              },
+              {
+                organization: "SLIIT FOSS Community",
+                location: "Malabe, Western Province, Sri Lanka",
+                roles: [
+                  {
+                    title: "Assistant Treasurer",
+                    duration: "May 2025 – Present",
+                    description:
+                      "Managed financial records and budgets for community activities.",
+                  },
+                  {
+                    title: "Designer",
+                    duration: "May 2024 – May 2025",
+                    description:
+                      "Created visual content and promotional materials for events.",
+                  },
+                  {
+                    title: "Member",
+                    duration: "May 2023 – May 2024",
+                    description:
+                      "Contributed to community discussions and supported initiatives.",
+                  },
+                ],
+              },
+              {
+                organization: "SLIIT SESC",
+                location: "Malabe, Western Province, Sri Lanka",
+                roles: [
+                  {
+                    title: "DevOps Lead",
+                    duration: "May 2025 – Present",
+                    description:
+                      "Led the setup and automation of cloud infrastructure to support CSR projects, ensuring scalability and deployment efficiency.",
+                  },
+                  {
+                    title: "Subcommittee Member",
+                    duration: "Oct 2024 – May 2025",
+                    description:
+                      "Supported organizational tasks and helped coordinate events.",
+                  },
+                  {
+                    title: "Member",
+                    duration: "Aug 2024 – Oct 2024",
+                    description:
+                      "Engaged in community activities and contributed to technical discussions.",
+                  },
+                ],
+              },
+            ].map((entry, index) => (
+              <Card
+                key={index}
+                className="border-l-4 border-l-emerald-500 bg-slate-50 dark:bg-slate-800"
+              >
+                <CardHeader className="pb-4">
+                  <CardTitle className="text-xl text-slate-800 dark:text-white">
+                    {entry.organization}
+                  </CardTitle>
+                  <p className="text-slate-600 dark:text-slate-400 font-medium">
+                    {entry.location}
+                  </p>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3">
+                    {entry.roles.map((role, i) => (
+                      <li key={i} className="flex items-start">
+                        <span className="text-emerald-500 mr-2">✓</span>
+                        <div>
+                          <p className="text-slate-800 dark:text-white font-medium">
+                            {role.title}
+                          </p>
+                          <p className="text-slate-600 dark:text-slate-400 text-sm">
+                            {role.duration}
+                          </p>
+                          <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">
+                            {role.description}
+                          </p>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   );

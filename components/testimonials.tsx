@@ -13,29 +13,29 @@ import { Star, Cloud, Code } from "lucide-react";
 export default function Testimonials() {
   const testimonials = [
     {
-      name: "Saman Perera",
-      role: "Senior DevOps Engineer, Tech Solutions Ltd.",
+      name: "Dhanushka Uditha",
+      role: "Senior DevOps Engineer, Zincat Technology",
       content:
-        "Saman delivered an exceptional full-stack solution with automated deployment. His DevOps expertise ensured our application scaled seamlessly from day one. The combination of clean code and robust infrastructure was exactly what we needed.",
-      avatar: "SJ",
+        "Sadeesha has consistently demonstrated a high level of professionalism and technical expertise during his time with us. His proactive approach to automating deployments, optimizing CI/CD pipelines, and maintaining infrastructure stability has made a noticeable impact on our operations. Thanks to his contributions, we’ve experienced smoother releases, minimal downtime, and improved overall reliability in our systems all while staying within our resource budget.",
+      avatar: "DU",
       stars: 5,
       type: "devops",
     },
     {
-      name: "Kavindu Kothalawala",
-      role: "DevOps Engineer, Innovatech",
+      name: "Kavindu Angelo",
+      role: "Owner, BIK Product",
       content:
-        "Saman's monitoring and observability setup has been crucial for our financial services platform. The dashboards and alerting system he implemented have prevented numerous potential outages and improved our response time significantly.",
-      avatar: "LT",
+        "Working with Sadeesha was one of the best decisions we made for our platform’s long-term success. From the very beginning, he clearly understood our need for a seamless, user-friendly experience and delivered beyond expectations. The system he built runs reliably with minimal downtime and excellent performance. Additionally, his cost-effective infrastructure design significantly reduced our operational expenses. His ability to combine technical efficiency with financial awareness truly sets him apart.",
+      avatar: "KA",
       stars: 5,
       type: "devops",
     },
     {
-      name: "Ashan Perera",
-      role: "ASE, Dayarathna Holdings",
+      name: "Janudi Adhikari",
+      role: "Undergraduate, SLIIT",
       content:
-        "From concept to deployment, Saman handled everything for our collaboration platform. The real-time features work flawlessly, and the automated deployment pipeline means we can push updates confidently. Truly full-stack expertise.",
-      avatar: "AM",
+        "I had the pleasure of working with Sadeesha on four significant successful projects during our time at the university, where he took on the role of project leader. His exceptional leadership, technical expertise, and unwavering commitment were instrumental in guiding our team toward success. He consistently ensured that deadlines were met, challenges were addressed effectively, and everyone stayed aligned with the project goals. Sadeesha’s dedication made a lasting impact on our academic journey.",
+      avatar: "JA",
       stars: 5,
       type: "hybrid",
     },
