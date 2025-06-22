@@ -398,6 +398,89 @@ export default function Resume() {
             </motion.div> */}
           </div>
         </div>
+
+        {/* Volunteering Section */}
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          viewport={{ once: true }}
+        >
+          <h3 className="text-2xl font-bold text-slate-800 dark:text-white mb-8 mt-8 text-center">
+            Volunteering Experience
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                organization: "Mozilla Campus Club of SLIIT",
+                location: "Malabe, Western Province, Sri Lanka",
+                roles: [
+                  { title: "President", duration: "May 2025 – Present" },
+                  {
+                    title: "Subcommittee Member",
+                    duration: "Apr 2024 – Apr 2025",
+                  },
+                  { title: "Member", duration: "May 2023 – May 2024" },
+                ],
+              },
+              {
+                organization: "SLIIT FOSS Community",
+                location: "Malabe, Western Province, Sri Lanka",
+                roles: [
+                  {
+                    title: "Assistant Treasurer",
+                    duration: "May 2025 – Present",
+                  },
+                  { title: "Designer", duration: "May 2024 – May 2025" },
+                  { title: "Member", duration: "May 2023 – May 2024" },
+                ],
+              },
+              {
+                organization: "Software Engineering Student Community - SLIIT",
+                location: "Malabe, Western Province, Sri Lanka",
+                roles: [
+                  { title: "DevOps Lead", duration: "May 2025 – Present" },
+                  {
+                    title: "Subcommittee Member",
+                    duration: "Oct 2024 – May 2025",
+                  },
+                  { title: "Member", duration: "Aug 2024 – Oct 2024" },
+                ],
+              },
+            ].map((entry, index) => (
+              <Card
+                key={index}
+                className="border-l-4 border-l-emerald-500 bg-slate-50 dark:bg-slate-800"
+              >
+                <CardHeader className="pb-4">
+                  <CardTitle className="text-xl text-slate-800 dark:text-white">
+                    {entry.organization}
+                  </CardTitle>
+                  <p className="text-slate-600 dark:text-slate-400 font-medium">
+                    {entry.location}
+                  </p>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3">
+                    {entry.roles.map((role, i) => (
+                      <li key={i} className="flex items-start">
+                        <span className="text-emerald-500 mr-2">✓</span>
+                        <div>
+                          <p className="text-slate-800 dark:text-white font-medium">
+                            {role.title}
+                          </p>
+                          <p className="text-slate-600 dark:text-slate-400 text-sm">
+                            {role.duration}
+                          </p>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   );
