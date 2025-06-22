@@ -54,14 +54,14 @@ export default function Navbar() {
               <img
                 src="/images/sadeesha.png"
                 alt="Sadeesha Perera"
-                className="h-10 w-10 rounded-md md:flex hidden"
+                className="h-10 w-10 rounded-md"
               />
-              <div className="font-bold text-xl text-slate-800 dark:text-white items-center">
+              <div className="font-bold text-xl text-slate-800 dark:text-white flex items-center">
                 Sadeesha
                 <span className="text-devops-500 dark:text-devops-300">
                   Perera
                 </span>
-                <Cloud className="h-4 w-4 ml-1 text-devops-500 dark:text-devops-300 md:flex hidden" />
+                <Cloud className="h-4 w-4 ml-1 text-devops-500 dark:text-devops-300" />
               </div>
             </div>
 
@@ -102,7 +102,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isMenuOpen && isMobile && (
-        <div className="fixed inset-0 z-40 bg-white dark:bg-jungle-900/95 pt-16">
+        <div className="fixed inset-0 z-40 bg-slate-100 dark:bg-slate-900 pt-16">
           <nav className="container mx-auto px-4 py-8 flex flex-col gap-4">
             {navItems.map((item) => (
               <Button

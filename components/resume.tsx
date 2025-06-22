@@ -21,7 +21,7 @@ export default function Resume() {
     {
       title: "Intern DevOps Engineer",
       company: "Zincat Technology",
-      location: "On-Site, Rathmalana, Sri Lanka",
+      location: "On-Site, Colombo",
       period: "2024 - Present",
       type: "hybrid",
       description: [
