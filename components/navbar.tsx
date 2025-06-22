@@ -54,14 +54,14 @@ export default function Navbar() {
               <img
                 src="/images/sadeesha.png"
                 alt="Sadeesha Perera"
-                className="h-10 w-10 rounded-md"
+                className="h-10 w-10 rounded-md md:flex hidden"
               />
-              <div className="font-bold text-xl text-slate-800 dark:text-white flex items-center">
+              <div className="font-bold text-xl text-slate-800 dark:text-white items-center">
                 Sadeesha
                 <span className="text-devops-500 dark:text-devops-300">
                   Perera
                 </span>
-                <Cloud className="h-4 w-4 ml-1 text-devops-500 dark:text-devops-300" />
+                <Cloud className="h-4 w-4 ml-1 text-devops-500 dark:text-devops-300 md:flex hidden" />
               </div>
             </div>
 
