@@ -406,7 +406,7 @@ export default function Resume() {
           transition={{ duration: 0.5, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-2xl font-bold text-slate-800 dark:text-white mb-8 mt-8 text-center">
+          <h3 className="text-3xl font-bold text-slate-800 dark:text-white mb-8 mt-8 text-center ">
             Volunteering Experience
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -415,12 +415,24 @@ export default function Resume() {
                 organization: "Mozilla Campus Club of SLIIT",
                 location: "Malabe, Western Province, Sri Lanka",
                 roles: [
-                  { title: "President", duration: "May 2025 – Present" },
+                  {
+                    title: "President",
+                    duration: "May 2025 – Present",
+                    description:
+                      "Led the club's initiatives, organized events, and managed overall operations.",
+                  },
                   {
                     title: "Subcommittee Member",
                     duration: "Apr 2024 – Apr 2025",
+                    description:
+                      "Assisted in planning and executing club activities and events.",
                   },
-                  { title: "Member", duration: "May 2023 – May 2024" },
+                  {
+                    title: "Member",
+                    duration: "May 2023 – May 2024",
+                    description:
+                      "Participated in club meetings and contributed to various projects.",
+                  },
                 ],
               },
               {
@@ -430,21 +442,45 @@ export default function Resume() {
                   {
                     title: "Assistant Treasurer",
                     duration: "May 2025 – Present",
+                    description:
+                      "Managed financial records and budgets for community activities.",
                   },
-                  { title: "Designer", duration: "May 2024 – May 2025" },
-                  { title: "Member", duration: "May 2023 – May 2024" },
+                  {
+                    title: "Designer",
+                    duration: "May 2024 – May 2025",
+                    description:
+                      "Created visual content and promotional materials for events.",
+                  },
+                  {
+                    title: "Member",
+                    duration: "May 2023 – May 2024",
+                    description:
+                      "Contributed to community discussions and supported initiatives.",
+                  },
                 ],
               },
               {
-                organization: "Software Engineering Student Community - SLIIT",
+                organization: "SLIIT SESC",
                 location: "Malabe, Western Province, Sri Lanka",
                 roles: [
-                  { title: "DevOps Lead", duration: "May 2025 – Present" },
+                  {
+                    title: "DevOps Lead",
+                    duration: "May 2025 – Present",
+                    description:
+                      "Led the setup and automation of cloud infrastructure to support CSR projects, ensuring scalability and deployment efficiency.",
+                  },
                   {
                     title: "Subcommittee Member",
                     duration: "Oct 2024 – May 2025",
+                    description:
+                      "Supported organizational tasks and helped coordinate events.",
                   },
-                  { title: "Member", duration: "Aug 2024 – Oct 2024" },
+                  {
+                    title: "Member",
+                    duration: "Aug 2024 – Oct 2024",
+                    description:
+                      "Engaged in community activities and contributed to technical discussions.",
+                  },
                 ],
               },
             ].map((entry, index) => (
@@ -471,6 +507,9 @@ export default function Resume() {
                           </p>
                           <p className="text-slate-600 dark:text-slate-400 text-sm">
                             {role.duration}
+                          </p>
+                          <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">
+                            {role.description}
                           </p>
                         </div>
                       </li>
