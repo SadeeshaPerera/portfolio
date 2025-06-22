@@ -21,7 +21,7 @@ export default function Resume() {
     {
       title: "Intern DevOps Engineer",
       company: "Zincat Technology",
-      location: "On-Site, Rathmalana, Sri Lanka",
+      location: "On-Site, Colombo",
       period: "2024 - Present",
       type: "hybrid",
       description: [
@@ -299,7 +299,7 @@ export default function Resume() {
                 Education
               </h3>
               {education.map((edu, index) => (
-                <Card key={index} className="border-l-4 border-l-slate-500">
+                <Card key={index} className="border-l-4 border-l-slate-500 mb-6">
                   <CardHeader>
                     <CardTitle className="text-xl text-slate-800 dark:text-white">
                       {edu.degree}
@@ -524,3 +524,5 @@ export default function Resume() {
     </section>
   );
 }
+
+//comment

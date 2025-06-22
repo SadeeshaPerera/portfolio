@@ -22,6 +22,7 @@ import {
   Code,
   Database,
   Globe,
+  Smartphone
 } from "lucide-react";
 
 export default function Projects() {
@@ -361,15 +362,15 @@ export default function Projects() {
           <TabsList className="grid w-full max-w-md mx-auto grid-cols-3 mb-8">
             <TabsTrigger value="devops" className="flex items-center gap-2">
               <Cloud className="h-4 w-4" />
-              DevOps Projects
+              DevOps
             </TabsTrigger>
             <TabsTrigger value="fullstack" className="flex items-center gap-2">
               <Code className="h-4 w-4" />
-              Full-Stack Projects
+              Full-Stack
             </TabsTrigger>
             <TabsTrigger value="mobile" className="flex items-center gap-2">
-              <Monitor className="h-4 w-4" />
-              Mobile Projects
+              <Smartphone className="h-4 w-4" />
+              Mobile
             </TabsTrigger>
           </TabsList>
 

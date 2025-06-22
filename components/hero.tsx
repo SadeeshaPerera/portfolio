@@ -124,7 +124,7 @@ export default function Hero() {
                 size="lg"
                 variant="outline"
                 onClick={scrollToProjects}
-                className="border-2 border-devops-300 text-white hover:bg-devops-800/50"
+                className="border-2 border-devops-300 text-slate-800 dark:text-white hover:bg-devops-800/50"
               >
                 View Projects
               </Button>
