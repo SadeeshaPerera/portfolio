@@ -299,7 +299,10 @@ export default function Resume() {
                 Education
               </h3>
               {education.map((edu, index) => (
-                <Card key={index} className="border-l-4 border-l-slate-500 mb-6">
+                <Card
+                  key={index}
+                  className="border-l-4 border-l-slate-500 mb-6"
+                >
                   <CardHeader>
                     <CardTitle className="text-xl text-slate-800 dark:text-white">
                       {edu.degree}
@@ -323,7 +326,7 @@ export default function Resume() {
 
           {/* Right Column */}
           <div className="space-y-8">
-            {/* Technical Skills */}
+            {/* Volunteering Experience */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -331,40 +334,114 @@ export default function Resume() {
               viewport={{ once: true }}
             >
               <h3 className="text-2xl font-bold text-slate-800 dark:text-white mb-6">
-                Technical Skills
+                Volunteering Experience
               </h3>
-              <div className="space-y-4">
-                {Object.entries(technicalSkills).map(([category, skills]) => (
-                  <Card key={category}>
-                    <CardHeader className="pb-2">
-                      <CardTitle className="text-lg text-slate-800 dark:text-white flex items-center gap-2">
-                        {category.includes("Frontend") ||
-                        category.includes("Backend") ? (
-                          <Code className="h-5 w-5 text-emerald-500" />
-                        ) : (
-                          <Cloud className="h-5 w-5 text-devops-500" />
-                        )}
-                        {category}
+              <div className="space-y-6">
+                {[
+                  {
+                    organization: "Mozilla Campus Club of SLIIT",
+                    location: "Malabe, Western Province, Sri Lanka",
+                    roles: [
+                      {
+                        title: "President",
+                        duration: "May 2025 – Present",
+                        description:
+                          "Led the club's initiatives, organized events, and managed overall operations.",
+                      },
+                      {
+                        title: "Subcommittee Member",
+                        duration: "Apr 2024 – Apr 2025",
+                        description:
+                          "Assisted in planning and executing club activities and events.",
+                      },
+                      {
+                        title: "Member",
+                        duration: "May 2023 – May 2024",
+                        description:
+                          "Participated in club meetings and contributed to various projects.",
+                      },
+                    ],
+                  },
+                  {
+                    organization: "SLIIT FOSS Community",
+                    location: "Malabe, Western Province, Sri Lanka",
+                    roles: [
+                      {
+                        title: "Assistant Treasurer",
+                        duration: "May 2025 – Present",
+                        description:
+                          "Managed financial records and budgets for community activities.",
+                      },
+                      {
+                        title: "Designer",
+                        duration: "May 2024 – May 2025",
+                        description:
+                          "Created visual content and promotional materials for events.",
+                      },
+                      {
+                        title: "Member",
+                        duration: "May 2023 – May 2024",
+                        description:
+                          "Contributed to community discussions and supported initiatives.",
+                      },
+                    ],
+                  },
+                  {
+                    organization: "SLIIT SESC",
+                    location: "Malabe, Western Province, Sri Lanka",
+                    roles: [
+                      {
+                        title: "DevOps Lead",
+                        duration: "May 2025 – Present",
+                        description:
+                          "Led the setup and automation of cloud infrastructure to support CSR projects, ensuring scalability and deployment efficiency.",
+                      },
+                      {
+                        title: "Subcommittee Member",
+                        duration: "Oct 2024 – May 2025",
+                        description:
+                          "Supported organizational tasks and helped coordinate events.",
+                      },
+                      {
+                        title: "Member",
+                        duration: "Aug 2024 – Oct 2024",
+                        description:
+                          "Engaged in community activities and contributed to technical discussions.",
+                      },
+                    ],
+                  },
+                ].map((entry, index) => (
+                  <Card
+                    key={index}
+                    className="border-l-4 border-l-emerald-500 bg-slate-50 dark:bg-slate-800"
+                  >
+                    <CardHeader className="pb-4">
+                      <CardTitle className="text-xl text-slate-800 dark:text-white">
+                        {entry.organization}
                       </CardTitle>
+                      <p className="text-slate-600 dark:text-slate-400 font-medium">
+                        {entry.location}
+                      </p>
                     </CardHeader>
                     <CardContent>
-                      <div className="flex flex-wrap gap-2">
-                        {skills.map((skill) => (
-                          <Badge
-                            key={skill}
-                            variant="secondary"
-                            className={
-                              category.includes("Frontend") ||
-                              category.includes("Backend") ||
-                              category.includes("Databases")
-                                ? "bg-emerald-100 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-200"
-                                : "bg-devops-100 dark:bg-devops-900/50 text-devops-800 dark:text-devops-200"
-                            }
-                          >
-                            {skill}
-                          </Badge>
+                      <ul className="space-y-3">
+                        {entry.roles.map((role, i) => (
+                          <li key={i} className="flex items-start">
+                            <span className="text-emerald-500 mr-2">•</span>
+                            <div>
+                              <p className="text-slate-800 dark:text-white font-medium">
+                                {role.title}
+                              </p>
+                              <p className="text-slate-600 dark:text-slate-400 text-sm">
+                                {role.duration}
+                              </p>
+                              <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">
+                                {role.description}
+                              </p>
+                            </div>
+                          </li>
                         ))}
-                      </div>
+                      </ul>
                     </CardContent>
                   </Card>
                 ))}
@@ -399,122 +476,48 @@ export default function Resume() {
           </div>
         </div>
 
-        {/* Volunteering Section */}
+        {/* Technical Skills Section */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-3xl font-bold text-slate-800 dark:text-white mb-8 mt-8 text-center ">
-            Volunteering Experience
+          <h3 className="text-3xl font-bold text-slate-800 dark:text-white mb-8 mt-8 text-center">
+            Technical Skills
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              {
-                organization: "Mozilla Campus Club of SLIIT",
-                location: "Malabe, Western Province, Sri Lanka",
-                roles: [
-                  {
-                    title: "President",
-                    duration: "May 2025 – Present",
-                    description:
-                      "Led the club's initiatives, organized events, and managed overall operations.",
-                  },
-                  {
-                    title: "Subcommittee Member",
-                    duration: "Apr 2024 – Apr 2025",
-                    description:
-                      "Assisted in planning and executing club activities and events.",
-                  },
-                  {
-                    title: "Member",
-                    duration: "May 2023 – May 2024",
-                    description:
-                      "Participated in club meetings and contributed to various projects.",
-                  },
-                ],
-              },
-              {
-                organization: "SLIIT FOSS Community",
-                location: "Malabe, Western Province, Sri Lanka",
-                roles: [
-                  {
-                    title: "Assistant Treasurer",
-                    duration: "May 2025 – Present",
-                    description:
-                      "Managed financial records and budgets for community activities.",
-                  },
-                  {
-                    title: "Designer",
-                    duration: "May 2024 – May 2025",
-                    description:
-                      "Created visual content and promotional materials for events.",
-                  },
-                  {
-                    title: "Member",
-                    duration: "May 2023 – May 2024",
-                    description:
-                      "Contributed to community discussions and supported initiatives.",
-                  },
-                ],
-              },
-              {
-                organization: "SLIIT SESC",
-                location: "Malabe, Western Province, Sri Lanka",
-                roles: [
-                  {
-                    title: "DevOps Lead",
-                    duration: "May 2025 – Present",
-                    description:
-                      "Led the setup and automation of cloud infrastructure to support CSR projects, ensuring scalability and deployment efficiency.",
-                  },
-                  {
-                    title: "Subcommittee Member",
-                    duration: "Oct 2024 – May 2025",
-                    description:
-                      "Supported organizational tasks and helped coordinate events.",
-                  },
-                  {
-                    title: "Member",
-                    duration: "Aug 2024 – Oct 2024",
-                    description:
-                      "Engaged in community activities and contributed to technical discussions.",
-                  },
-                ],
-              },
-            ].map((entry, index) => (
-              <Card
-                key={index}
-                className="border-l-4 border-l-emerald-500 bg-slate-50 dark:bg-slate-800"
-              >
-                <CardHeader className="pb-4">
-                  <CardTitle className="text-xl text-slate-800 dark:text-white">
-                    {entry.organization}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {Object.entries(technicalSkills).map(([category, skills]) => (
+              <Card key={category}>
+                <CardHeader className="pb-2">
+                  <CardTitle className="text-lg text-slate-800 dark:text-white flex items-center gap-2">
+                    {category.includes("Frontend") ||
+                    category.includes("Backend") ? (
+                      <Code className="h-5 w-5 text-emerald-500" />
+                    ) : (
+                      <Cloud className="h-5 w-5 text-devops-500" />
+                    )}
+                    {category}
                   </CardTitle>
-                  <p className="text-slate-600 dark:text-slate-400 font-medium">
-                    {entry.location}
-                  </p>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-3">
-                    {entry.roles.map((role, i) => (
-                      <li key={i} className="flex items-start">
-                        <span className="text-emerald-500 mr-2">✓</span>
-                        <div>
-                          <p className="text-slate-800 dark:text-white font-medium">
-                            {role.title}
-                          </p>
-                          <p className="text-slate-600 dark:text-slate-400 text-sm">
-                            {role.duration}
-                          </p>
-                          <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">
-                            {role.description}
-                          </p>
-                        </div>
-                      </li>
+                  <div className="flex flex-wrap gap-2">
+                    {skills.map((skill) => (
+                      <Badge
+                        key={skill}
+                        variant="secondary"
+                        className={
+                          category.includes("Frontend") ||
+                          category.includes("Backend") ||
+                          category.includes("Databases")
+                            ? "bg-emerald-100 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-200"
+                            : "bg-devops-100 dark:bg-devops-900/50 text-devops-800 dark:text-devops-200"
+                        }
+                      >
+                        {skill}
+                      </Badge>
                     ))}
-                  </ul>
+                  </div>
                 </CardContent>
               </Card>
             ))}

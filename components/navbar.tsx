@@ -54,9 +54,9 @@ export default function Navbar() {
               <img
                 src="/images/sadeesha.png"
                 alt="Sadeesha Perera"
-                className="h-10 w-10 rounded-md"
+                className="h-10 w-10 rounded-md md:flex hidden"
               />
-              <div className="font-bold text-xl text-slate-800 dark:text-white flex items-center">
+              <div className="font-bold text-xl text-slate-800 dark:text-white flex items-center md:flex hidden">
                 Sadeesha
                 <span className="text-devops-500 dark:text-devops-300">
                   Perera

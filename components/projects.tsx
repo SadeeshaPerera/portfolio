@@ -95,6 +95,27 @@ export default function Projects() {
       image: "/images/automation.jpg?height=200&width=400",
       //icon: <Terminal className="h-6 w-6" />
     },
+    {
+      title: "CloudWatchr - Cloud Monitoring Dashboard",
+      description:
+        "Developed a comprehensive monitoring dashboard for cloud resources, providing real-time insights into system performance, resource utilization, and alerting.",
+      role: "DevOps & Systems Automation",
+      outcome:
+        "Enabled proactive resource management and incident response through centralized monitoring, reducing downtime by 50% and improving system reliability.",
+      techStack: [
+        "Grafana",
+        "Prometheus",
+        "Docker",
+        "Kubernetes",
+        "Alertmanager",
+       
+      ],
+      github: "https://github.com/SadeeshaPerera/CloudWatchr",
+      //demo: "#",
+      //blog: null,
+      image: "/images/monitoring.png?height=200&width=400",
+      //icon: <Terminal className="h-6 w-6" />
+    },
   ];
 
   const fullstackProjects = [
