@@ -30,7 +30,7 @@ export default function Projects() {
     {
       title: "Enterprise CI/CD Pipeline using CircleCI",
       description:
-        "Built a robust CI/CD pipeline using CircleCI for an enterprise-grade application. Integrated automated testing, build, and deployment stages with branch-based workflows and environment-specific configurations.",
+        "Built a robust CI/CD pipeline using CircleCI for an enterprise-grade application. Integrated build, and deployment stages with branch-based workflows and environment-specific configurations.",
       role: "DevOps Engineering",
       outcome:
         "Reduced deployment time by 70%, increased release reliability, and ensured consistent testing across multiple environments through pipeline automation.",
@@ -41,7 +41,6 @@ export default function Projects() {
         "AWS EC2",
         "AWS S3",
         "YAML",
-        "Slack Notifications",
       ],
       github: "https://github.com/SadeeshaPerera/ci-cd-configs",
       //demo: "#",
@@ -83,7 +82,6 @@ export default function Projects() {
       techStack: [
         "Bash",
         "Cron",
-        "systemd",
         "Ansible",
         "GitHub Actions",
         "AWS CLI",
@@ -167,10 +165,10 @@ export default function Projects() {
     {
       title: "Health Insurance Management System",
       description:
-        "Created a comprehensive healthcare platform with patient records, appointment scheduling, telemedicine features, and HIPAA-compliant infrastructure.",
+        "Created a comprehensive healthcare platform with patient records, telemedicine features, and HIPAA-compliant infrastructure.",
       role: "Full-Stack Development & Software Testing",
       outcome:
-        "Served 5000+ patients, reduced appointment scheduling time by 60%, HIPAA compliant",
+        "Improved healthcare service delivery by 30% through streamlined patient management and secure data handling.",
       techStack: [
         "JavaScript",
         "PHP",
@@ -188,10 +186,10 @@ export default function Projects() {
     {
       title: "Shopping Mall Management Application",
       description:
-        "Built a real-time financial analytics platform with interactive charts, automated reporting, and machine learning-powered insights for investment decisions.",
+        "A cross-platform mobile application for managing shopping mall operations, including tenant management, sales tracking, and incident management.",
       role: "Full-Stack Development & Project Management",
       outcome:
-        "Processed 1M+ data points daily, improved decision-making speed by 40%",
+        "Delivered a user-friendly application that improved tenant management efficiency by 40% and enhanced customer experience through real-time updates and notifications.",
       techStack: ["Dart", "Flutter", "Firebase", "REST APIs", "Figma"],
       github: "https://github.com/SadeeshaPerera/shopping_mall_application",
       demo: "https://sadeeshaperera.github.io/shopping_mall_application/",

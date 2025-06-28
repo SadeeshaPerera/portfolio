@@ -86,7 +86,7 @@ export default function Testimonials() {
             Testimonials
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-            What colleges and clients say about my full-stack development and
+            What clients and collegians say about my full-stack development and
             DevOps engineering services.
           </p>
           <div className="h-1 w-20 bg-gradient-to-r from-devops-500 to-emerald-500 mx-auto mt-4"></div>

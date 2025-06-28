@@ -19,33 +19,41 @@ import {
 export default function Resume() {
   const experience = [
     {
-      title: "Intern DevOps Engineer",
-      company: "Zincat Technology",
+      title: "DevOps Engineer",
+      company: "Intern at Zincat Technology",
       location: "On-Site, Colombo",
       period: "2024 - Present",
       type: "hybrid",
       description: [
-        "Reduced deployment time by 75% and improved application performance by 40%",
-        "Mentored  junior developers on DevOps best practices",
-        "Implemented CI/CD pipelines for both frontend and backend applications",
+        "Contributed to achieve ISO 27001:2022 compliance",
+        "Coordinated with cost optimization, resource budget planning",
+        "Implemented CI/CD pipelines for both frontend and backend applications using CircleCI",
+        "Autoscaled applications using Load Balancers and Auto Scaling Groups",
+        "Managed cloud infrastructure on AWS, Azure and DigitalOcean platforms",
         "Developed monitoring solutions and automated incident response systems",
-        "Collaborated with frontend teams to optimize application deployment strategies",
-        "Manage their cloud infrastructure",
+        "Reduced deployment time by 75% and improved application performance by 40%",
+        "Collaborated with full stack and QA teams to optimize application deployment strategies",
+        "Assist with recovery drills and incident response planning",
+        "Migrated legacy applications to scalable and cost efficient environments",
       ],
     },
     {
-      title: "Software Engineering Student",
-      company: "Sri Lanka Institute of Information Technology",
+      title: "Software Developer",
+      company: "Undergraduate at SLIIT",
       location: "Malabe, Sri Lanka",
       period: "2022 - Present",
       type: "fullstack",
       description: [
-        "Developed 5+ web applications using React, Vue.js, and Django",
-        "Designed and implemented PostgreSQL databases with optimized queries",
+        "Developed 15+ software applications using Javascript, PHP, and Java etc.",
+        "Designed and implemented SQL databases with optimized queries",
         "Created responsive UIs and integrated third-party APIs",
         "Set up Docker containerization and basic CI/CD practices",
+        "Participated in Agile development processes and code reviews",
+        "Contributed to open-source projects and community initiatives",
+        "Mentored junior developers on best practices in software development and DevOps",
       ],
     },
+    
   ];
 
   const education = [
@@ -55,7 +63,7 @@ export default function Resume() {
       institution: "Sri Lanka Institute of Information Technology",
       period: "2022 - Present",
       details:
-        "Focus on Software Engineering, Systems Programming, and Database Design",
+        "Focused on Software Engineering, System Architecture, and Database Design etc.",
     },
     {
       degree: "G.C.E Advanced Level",
@@ -68,7 +76,7 @@ export default function Resume() {
       institution: "De Mazenod College",
       period: "2008 - 2018",
       details:
-        "Completed with 9 passes including Mathematics, Science, and English",
+        "Completed with 9A passes including Mathematics, Science, and English",
     },
   ];
 
@@ -82,18 +90,18 @@ export default function Resume() {
     "Frontend Development": [
       "React",
       "Next.js",
-      "Vue.js",
+      "Redux",
       "TypeScript",
       "Tailwind CSS",
-      "Redux",
+      "Bootstrap",
     ],
     "Backend Development": [
       "Node.js",
       "Python",
-      "Django",
-      "FastAPI",
+      "Java",
+      "Laravel",
       "Express.js",
-      "GraphQL",
+      "ASP.NET",
     ],
     Databases: [
       "PostgreSQL",
@@ -101,7 +109,7 @@ export default function Resume() {
       "Redis",
       "MySQL",
       "DynamoDB",
-      "Elasticsearch",
+      "SQLite",
     ],
     "Cloud Platforms": [
       "AWS",
@@ -124,7 +132,6 @@ export default function Resume() {
       "Grafana",
       "ELK Stack",
       "Datadog",
-      "New Relic",
       "Sentry",
     ],
   };
@@ -174,9 +181,9 @@ export default function Resume() {
             Resume
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-6">
-            Comprehensive overview of my professional journey as a Full-Stack
-            DevOps Engineer, combining development expertise with infrastructure
-            automation.
+            Comprehensive overview of my professional journey as a DevOps
+            Engineer combining full-stack development expertise with
+            infrastructure automation.
           </p>
           <div className="h-1 w-20 bg-gradient-to-r from-devops-500 to-emerald-500 mx-auto mb-6"></div>
           <Button className="bg-gradient-to-r from-devops-600 to-emerald-600 hover:from-devops-700 hover:to-emerald-700">
@@ -336,7 +343,7 @@ export default function Resume() {
               <h3 className="text-2xl font-bold text-slate-800 dark:text-white mb-6">
                 Volunteering Experience
               </h3>
-              <div className="space-y-6">
+              <div className="space-y-7">
                 {[
                   {
                     organization: "Mozilla Campus Club of SLIIT",
@@ -352,13 +359,13 @@ export default function Resume() {
                         title: "Subcommittee Member",
                         duration: "Apr 2024 – Apr 2025",
                         description:
-                          "Assisted in planning and executing club activities and events.",
+                          "Assisted in planning and executing club events.",
                       },
                       {
                         title: "Member",
-                        duration: "May 2023 – May 2024",
+                        duration: "March 2023 – March 2024",
                         description:
-                          "Participated in club meetings and contributed to various projects.",
+                          "Participated in club meetings and contributed to discussions on open-source projects.",
                       },
                     ],
                   },

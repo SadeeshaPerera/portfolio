@@ -72,7 +72,7 @@ export default function Contact() {
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
             Ready to optimize your infrastructure and streamline your deployment
-            processes? Let's discuss how I can help your team achieve DevOps
+            processes? Let's discuss how I can help your team achieve
             excellence.
           </p>
           <div className="h-1 w-20 bg-emerald-500 mx-auto mt-4"></div>
