@@ -33,114 +33,143 @@ export default function NotFound() {
   // Don't render animations until client-side
   if (!isMounted) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-jungle-gradient relative overflow-hidden">
-        <div className="container relative z-10">
-          <div className="max-w-md mx-auto bg-white/10 backdrop-blur-md p-8 rounded-lg border border-jungle-300/20 shadow-xl">
-            <div className="text-center">
-              <div className="flex justify-center mb-6">
-                <img
-                  src="/images/sadeesha.png"
-                  alt="Sadeesha Perera - Lost in the Django Jungle"
-                  className="w-32 h-32 object-contain"
-                />
-              </div>
-              <h1 className="text-6xl font-bold text-white mb-2">404</h1>
-              <h2 className="text-2xl font-semibold text-jungle-200 mb-4">
-                Lost in the Django Jungle
-              </h2>
-              <p className="text-slate-200 mb-8">
-                Oops! It seems you've wandered off the path. This page doesn't
-                exist in our jungle.
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-devops-900 to-slate-800">
+        {/* Animated background elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          {Array.from({ length: 10 }).map((_, i) => (
+            <motion.div
+              key={i}
+              className="absolute opacity-10"
+              initial={{
+                x: Math.random() * 1200,
+                y: Math.random() * 800,
+              }}
+              animate={{
+                x: Math.random() * 1200,
+                y: Math.random() * 800,
+              }}
+              transition={{
+                duration: 15 + Math.random() * 25,
+                repeat: Number.POSITIVE_INFINITY,
+                repeatType: "reverse",
+              }}
+            >
+              <Leaf className="h-8 w-8 text-emerald-400" />
+            </motion.div>
+          ))}
+        </div>
+
+        <div className="container mx-auto px-4 z-10 relative">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center"
+          >
+            {/* Removed Sadeesha image for a cleaner 404 page */}
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
+              <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+                404 - Lost in the <span className="text-emerald-300">Django Jungle</span>
+              </h1>
+              <p className="text-xl md:text-2xl text-slate-200 max-w-2xl mx-auto mb-8 drop-shadow">
+                Oops! It seems you've wandered off the path. This page doesn't exist in our jungle.
               </p>
               <Button
                 asChild
-                className="bg-jungle-600 hover:bg-jungle-700 text-white"
+                size="lg"
+                className="bg-emerald-600 hover:bg-emerald-700 text-white border-2 border-emerald-500"
               >
                 <Link href="/">
                   <Leaf className="mr-2 h-4 w-4" /> Return to Base Camp
                 </Link>
               </Button>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
-      </div>
+
+        {/* Enhanced geometric decorations */}
+        <div className="absolute top-20 left-10 w-20 h-20 border border-devops-400/30 rotate-45"></div>
+        <div className="absolute bottom-20 right-10 w-16 h-16 border border-emerald-300/20 rotate-12"></div>
+        <div className="absolute top-1/2 left-5 w-12 h-12 bg-devops-500/10 rotate-45"></div>
+        <div className="absolute top-1/3 right-8 w-14 h-14 bg-emerald-500/10 rotate-12"></div>
+      </section>
     );
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-jungle-gradient relative overflow-hidden">
-      {/* Jungle background */}
-      <div
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-30"
-        style={{ backgroundImage: `url('/images/django-jungle.png')` }}
-      />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-devops-900 to-slate-800">
+      {/* Animated background elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        {Array.from({ length: 10 }).map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute opacity-10"
+            initial={{
+              x: Math.random() * dimensions.width,
+              y: Math.random() * dimensions.height,
+            }}
+            animate={{
+              x: Math.random() * dimensions.width,
+              y: Math.random() * dimensions.height,
+            }}
+            transition={{
+              duration: 15 + Math.random() * 25,
+              repeat: Number.POSITIVE_INFINITY,
+              repeatType: "reverse",
+            }}
+          >
+            <Leaf className="h-8 w-8 text-emerald-400" />
+          </motion.div>
+        ))}
+      </div>
 
-      {/* Floating leaves - only rendered client-side */}
-      {Array.from({ length: 10 }).map((_, i) => (
+      <div className="container mx-auto px-4 z-10 relative">
         <motion.div
-          key={i}
-          className="absolute text-jungle-300 opacity-30 z-10"
-          initial={{
-            x: Math.random() * dimensions.width,
-            y: -20,
-            rotate: Math.random() * 360,
-            scale: 0.5 + Math.random() * 1.5,
-          }}
-          animate={{
-            y: dimensions.height + 50,
-            x: `calc(${Math.random() * 100}vw + ${Math.sin(i) * 100}px)`,
-            rotate: Math.random() * 360 + 180,
-          }}
-          transition={{
-            duration: 10 + Math.random() * 20,
-            repeat: Number.POSITIVE_INFINITY,
-            delay: Math.random() * 5,
-            ease: "linear",
-          }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-center"
         >
-          <Leaf size={20 + Math.random() * 15} />
-        </motion.div>
-      ))}
+          {/* Removed Sadeesha image for a cleaner 404 page */}
 
-      <div className="container relative z-10">
-        <div className="max-w-md mx-auto bg-white/10 backdrop-blur-md p-8 rounded-lg border border-jungle-300/20 shadow-xl">
-          <div className="text-center">
-            <motion.div
-              className="flex justify-center mb-6"
-              animate={{ y: [0, -10, 0] }}
-              transition={{
-                duration: 2,
-                repeat: Number.POSITIVE_INFINITY,
-                ease: "easeInOut",
-              }}
-            >
-              <img
-                src="/images/sadeesha.png"
-                alt="Sadeesha Perera - Lost in the Django Jungle"
-                className="w-32 h-32 object-contain"
-              />
-            </motion.div>
-
-            <h1 className="text-6xl font-bold text-white mb-2">404</h1>
-            <h2 className="text-2xl font-semibold text-jungle-200 mb-4">
-              Lost in the Django Jungle
-            </h2>
-            <p className="text-slate-200 mb-8">
-              Oops! It seems you've wandered off the path. This page doesn't
-              exist in our jungle.
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+          >
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+              404 - Page Not Found
+            </h1>
+            <p className="text-xl md:text-2xl text-slate-200 max-w-2xl mx-auto mb-4 drop-shadow">
+              Sorry, the page you are looking for does not exist.<br />
+              You might be lost in the <span className="text-emerald-300 font-semibold">Cloud</span>.
             </p>
-
+            <p className="text-base text-slate-400 max-w-xl mx-auto mb-8">
+              Double-check the URL or return to the homepage to find your way back.
+            </p>
             <Button
               asChild
-              className="bg-jungle-600 hover:bg-jungle-700 text-white"
+              size="lg"
+              className="bg-emerald-600 hover:bg-emerald-700 text-white border-2 border-emerald-500"
             >
               <Link href="/">
-                <Leaf className="mr-2 h-4 w-4" /> Return to Base Camp
+                <Leaf className="mr-2 h-4 w-4" /> Go to Homepage
               </Link>
             </Button>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
-    </div>
+
+      {/* Enhanced geometric decorations */}
+      <div className="absolute top-20 left-10 w-20 h-20 border border-devops-400/30 rotate-45"></div>
+      <div className="absolute bottom-20 right-10 w-16 h-16 border border-emerald-300/20 rotate-12"></div>
+      <div className="absolute top-1/2 left-5 w-12 h-12 bg-devops-500/10 rotate-45"></div>
+      <div className="absolute top-1/3 right-8 w-14 h-14 bg-emerald-500/10 rotate-12"></div>
+    </section>
   );
 }
