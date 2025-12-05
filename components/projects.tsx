@@ -96,6 +96,25 @@ export default function Projects() {
       //icon: <Terminal className="h-6 w-6" />
     },
     {
+      title: "Laravel Auto Provision Project",
+      description:
+        "Automated deployment of a Laravel application using Ansible with repeatable roles for PHP, Nginx, and database setup.",
+      role: "DevOps Automation",
+      outcome:
+        "Delivers consistent Laravel releases across local and remote targets with single-command Ansible playbooks and environment-specific inventories.",
+      techStack: [
+        "Ansible",
+        "Laravel",
+        "Nginx",
+        "SQLite",
+        "Ubuntu"
+      ],
+      github: "https://github.com/SadeeshaPerera/laravel-ansible-deploy",
+      documentation: "laravel-ansible-deploy",
+      image: "/images/laravel-ansible-deploy.png?height=200&width=400",
+      //icon: <Server className="h-6 w-6" />
+    },
+    {
       title: "CloudWatchr - Cloud Monitoring Dashboard",
       description:
         "Developed a comprehensive monitoring dashboard for cloud resources, providing real-time insights into system performance, resource utilization, and alerting.",
