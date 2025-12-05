@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import {
   Card,
   CardContent,
@@ -22,7 +23,8 @@ import {
   Code,
   Database,
   Globe,
-  Smartphone
+  Smartphone,
+  FileText
 } from "lucide-react";
 
 export default function Projects() {
@@ -110,7 +112,7 @@ export default function Projects() {
       ],
       github: "https://github.com/SadeeshaPerera/CloudWatchr",
       //demo: "#",
-      //blog: null,
+      documentation: "cloudwatchr",
       image: "/images/monitoring.png?height=200&width=400",
       //icon: <Terminal className="h-6 w-6" />
     },
@@ -350,6 +352,18 @@ export default function Projects() {
             <a href={project.blog} target="_blank" rel="noopener noreferrer">
               Documentation
             </a>
+          </Button>
+        )}
+        {project.documentation && (
+          <Button
+            variant="outline"
+            size="sm"
+            asChild
+            className="border-slate-200 dark:border-slate-700"
+          >
+            <Link href={`/projects/${project.documentation}`}>
+              <FileText className="h-4 w-4 mr-1" /> Documentation
+            </Link>
           </Button>
         )}
       </CardFooter>
