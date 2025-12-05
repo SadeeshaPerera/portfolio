@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import ThemeToggle from "@/components/theme-toggle";
 import { Menu, X, Cloud } from "lucide-react";
@@ -10,6 +11,8 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const isMobile = useMobile();
+  const pathname = usePathname();
+  const router = useRouter();
 
   const navItems = [
     { name: "Home", href: "#" },
@@ -32,6 +35,15 @@ export default function Navbar() {
 
   const scrollToSection = (href: string) => {
     setIsMenuOpen(false);
+
+    // If we're not on the home page, navigate there with the correct hash
+    if (pathname !== "/") {
+      const target = href === "#" ? "/" : `/${href}`; // results in "/#section"
+      router.push(target);
+      return;
+    }
+
+    // On the home page, perform smooth scrolling
     if (href === "#") {
       window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
