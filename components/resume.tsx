@@ -22,7 +22,7 @@ export default function Resume() {
       title: "DevOps Engineer",
       company: "Intern at Zincat Technology",
       location: "On-Site, Colombo",
-      period: "2024 - Present",
+      period: "2024 Nov - 2025 May",
       type: "hybrid",
       description: [
         "Contributed to achieve ISO 27001:2022 compliance",
@@ -41,7 +41,7 @@ export default function Resume() {
       title: "Software Developer",
       company: "Undergraduate at SLIIT",
       location: "Malabe, Sri Lanka",
-      period: "2022 - Present",
+      period: "2022 - 2026 May",
       type: "fullstack",
       description: [
         "Developed 15+ software applications using Javascript, PHP, and Java etc.",
@@ -61,7 +61,7 @@ export default function Resume() {
       degree:
         "Bachelor degree in Information Technology specializing in Software Engineering",
       institution: "Sri Lanka Institute of Information Technology",
-      period: "2022 - Present",
+      period: "2022 - 2026 May",
       details:
         "Focused on Software Engineering, System Architecture, and Database Design etc.",
     },
@@ -351,7 +351,7 @@ export default function Resume() {
                     roles: [
                       {
                         title: "President",
-                        duration: "May 2025 – Present",
+                        duration: "March 2025 – June 2026",
                         description:
                           "Led the club's initiatives, organized events, and managed overall operations.",
                       },
@@ -375,7 +375,7 @@ export default function Resume() {
                     roles: [
                       {
                         title: "Assistant Treasurer",
-                        duration: "May 2025 – Present",
+                        duration: "May 2025 – June 2026",
                         description:
                           "Managed financial records and budgets for community activities.",
                       },
@@ -399,7 +399,7 @@ export default function Resume() {
                     roles: [
                       {
                         title: "DevOps Lead",
-                        duration: "May 2025 – Present",
+                        duration: "May 2025 – June 2026",
                         description:
                           "Led the setup and automation of cloud infrastructure to support CSR projects, ensuring scalability and deployment efficiency.",
                       },
